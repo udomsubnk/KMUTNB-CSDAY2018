@@ -14,9 +14,21 @@
         min-height: calc(180vh - 106px);
     }
 }
-.call-to-action{
+.Landing-register{
     padding: .5rem 2rem !important;
     font-size: 1.75rem !important;
     line-height: 2 !important;
-    border-radius: 2rem !important;
+    border-radius: 1rem !important;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-right: 25px;
+}
+.Landing-viewmore {
+    padding: .5rem 2rem !important;
+    font-size: 1.75rem !important;
+    line-height: 2 !important;
+    border-radius: 1rem !important;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 250px;
 }
