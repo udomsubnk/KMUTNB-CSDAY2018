@@ -1,5 +1,5 @@
 .Location{
-    height: 500px;
+    height: 450px;
     display: table;
     width: 100%;
     border: 1px solid yellow;
@@ -7,28 +7,32 @@
 }
 
 .map-location {
-    padding-left: 11rem;
+    padding-left: 9rem;
+    width: 50%;
 }
 .content-location {
-    padding-right: 11rem;
+    text-align: left;
+    width: 50%;
 }
   
 .halfnaja {
     display: table-cell;
     vertical-align: middle;
-    width: 50%;
 }
 .map-google{
-    width: 400px;
-    height: 400px;
+    /* width: 400px; */
+    /* height: 400px; */
+}
+.mgl40{
+    margin-left: 40px;
 }
 .content-location-header{
-    font-size: 50px;
+    font-size: 60px;
     color:#f59f66;
     font-weight: 400;
 }
 .content-location-body{
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(201, 211, 111);
 }
 .content-location-footer{
