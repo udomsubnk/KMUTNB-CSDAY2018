@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Map } from './Map'
+
 import '../Styles/Location.css';
 
 
@@ -6,7 +8,14 @@ class Location extends Component {
   render() {
     return (
       <div className="Location">
-        <h1>This is Location component</h1>        
+        <div className="map-location halfnaja">
+          <div className="map-google">
+            <Map/>
+          </div>
+        </div>
+        <div className="content-location halfnaja">
+          Location
+        </div>        
       </div>
     );
   }
