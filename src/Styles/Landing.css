@@ -14,3 +14,9 @@
         min-height: calc(180vh - 106px);
     }
 }
+.call-to-action{
+    padding: .5rem 2rem !important;
+    font-size: 1.75rem !important;
+    line-height: 2 !important;
+    border-radius: 2rem !important;
+}
