@@ -14,6 +14,11 @@ class App extends Component {
         <Navbar />
         <div className="App">
           <div className="white">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <h2>เนื้อหาที่ต้องมี</h2>
             <br />ref: <a href="http://2017.barcampbangkhen.org/"> barcamp </a>
             <br />-Landing : logo,ลิงค์ลงทะเบียน,เลื่อนดูรายละเอียด
