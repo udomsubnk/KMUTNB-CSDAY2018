@@ -6,29 +6,35 @@
 }
 @media (min-height: 480px){
     .Landing{
-        min-height: calc(100vh - 106px);
+        min-height: calc(100vh - 80px);
     }
 }
 @media (max-height: 400px){
     .Landing{
-        min-height: calc(180vh - 106px);
+        min-height: calc(180vh - 80px);
     }
+}
+.Landing-logo{
+    margin-top: 30px;
+}
+.Landing-calltoaction{
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .Landing-register{
     padding: .5rem 2rem !important;
-    font-size: 1.75rem !important;
+    font-size: 1.5rem !important;
     line-height: 2 !important;
     border-radius: 1rem !important;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-right: 25px;
+    margin: 2vh 1vw;
 }
 .Landing-viewmore {
     padding: .5rem 2rem !important;
-    font-size: 1.75rem !important;
+    font-size: 1.5rem !important;
     line-height: 2 !important;
     border-radius: 1rem !important;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     width: 250px;
+    margin: 2vh 1vw;
+
 }
