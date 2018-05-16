@@ -28,7 +28,14 @@ class Carousel extends Component {
 		else return '';
 	}
 	getMajorColor = function(index){
-		return this.Data[index].type + "-color";
+        let type = '';
+        if(this.Data[index].type == "Mobile Application") type='mobile';
+        else if(this.Data[index].type == "Web Apllication") type='web';
+        else if(this.Data[index].type == "ML & Data analytics") type='ml';
+        else if(this.Data[index].type == "System(ระบบเบื้องหลัง)") type='system';
+        else if(this.Data[index].type == "Blockchain") type='blockchain';
+        else type="other";
+		return type + "-color";
 	}
 	up = function(e){
 		e.preventDefault();
@@ -65,27 +72,27 @@ class Carousel extends Component {
 				<div className="Carousel-display">
 					<div className={"Carousel-item crs-first " + this.getClass(this.state.crsFirst)}>
 						<div className="row Carousel-item-text">
-							<div className="col-sm-12 col-xs-12">{this.getName(this.state.crsFirst)}</div>
+							<div className={"col-sm-12 col-xs-12 " + this.getMajorColor(this.state.crsFirst)}>{this.getName(this.state.crsFirst)}</div>
 						</div>
 					</div>
 					<div className={"Carousel-item crs-second " + this.getClass(this.state.crsSecond)}>
 						<div className="row Carousel-item-text">
-							<div className="col-sm-12 col-xs-12">{this.getName(this.state.crsSecond)}</div>
+							<div className={"col-sm-12 col-xs-12 " + this.getMajorColor(this.state.crsSecond)}>{this.getName(this.state.crsSecond)}</div>
 						</div>
 					</div>
 					<div className={"Carousel-item crs-third " + this.getClass(this.state.crsThird)}>
 						<div className="row Carousel-item-text">
-							<div className="col-sm-12 col-xs-12">{this.getName(this.state.crsThird)}</div>
+							<div className={"col-sm-12 col-xs-12 " + this.getMajorColor(this.state.crsThird)}>{this.getName(this.state.crsThird)}</div>
 						</div>
 					</div>
 					<div className={"Carousel-item crs-fourth " + this.getClass(this.state.crsFourth)}>
 						<div className="row Carousel-item-text">
-							<div className="col-sm-12 col-xs-12">{this.getName(this.state.crsFourth)}</div>
+							<div className={"col-sm-12 col-xs-12 " + this.getMajorColor(this.state.crsFourth)}>{this.getName(this.state.crsFourth)}</div>
 						</div>
 					</div>
 					<div className={"Carousel-item crs-fifth " + this.getClass(this.state.crsFifth)}>
 						<div className="row Carousel-item-text">
-							<div className="col-sm-12 col-xs-12">{this.getName(this.state.crsFifth)}</div>
+							<div className={"col-sm-12 col-xs-12 " + this.getMajorColor(this.state.crsFifth)}>{this.getName(this.state.crsFifth)}</div>
 						</div>
 					</div>
 				</div>
