@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import '../Styles/Location.css';
+import '../Styles/DateAndTime.css';
 
 
-class Location extends Component {
+class DateAndTime extends Component {
   render() {
     return (
-      <div className="Location">
-        <h1>This is Location component</h1>        
+      <div className="DateAndTime">
+        <h1>This is DateAndTime component</h1>        
       </div>
     );
   }
 }
 
-export default Location;
+export default DateAndTime;
