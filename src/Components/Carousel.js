@@ -104,7 +104,7 @@ class Carousel extends Component {
 let i = 0, c = 0, btn = '';
 $(document).ready(function() {
 	setInterval(function(){
-		if(i === 220){
+		if(i === 75){
 			btn = 'up'
 			c = -1;
 		}else if(i === 0){
