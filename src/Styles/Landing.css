@@ -13,6 +13,52 @@
         min-height: calc(179vh);
     }
 }
+@media (min-width: 300px) {
+	h1{
+		font-size: 1.75rem !important;
+	}
+	h2{
+		font-size: 1.4rem !important;
+	}
+	.crs-first{
+		font-size: 0.7rem !important;
+	}
+	.crs-second{
+		font-size: 1rem !important;
+	}
+	.crs-third{
+		font-size: 1.3rem !important;
+	}
+	.crs-fourth{
+		font-size: 1rem !important;
+	}
+	.crs-fifth{
+		font-size: 0.7rem !important;
+	}
+}
+@media (min-width: 900px) {
+	h1{
+		font-size: 2.5rem !important;
+	}
+	h2{
+		font-size: 2rem !important;
+	}
+	.crs-first{
+		font-size: 0.7rem !important;
+	}
+	.crs-second{
+		font-size: 1.1rem !important;
+	}
+	.crs-third{
+		font-size: 1.75rem !important;
+	}
+	.crs-fourth{
+		font-size: 1.1rem !important;
+	}
+	.crs-fifth{
+		font-size: 0.7rem !important;
+	}
+}
 .Landing-logo{
 	margin-top: 50px;
 }
@@ -31,6 +77,8 @@
     margin: 2vh 1vw;
     color: rgb(251, 255, 0) !important;
 	border-color: rgb(251, 255, 0) !important;
+	-webkit-animation: register 3s ease infinite;
+	        animation: register 3s ease infinite;
 }
 span.Landing-register-text{
 	color: #BFC0C3 !important;
@@ -65,9 +113,16 @@ span.Landing-csstudent{
 	height: inherit;
 }
 .Carousel-item-text > div{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-align: center;
 }
 .crs-first{
@@ -94,7 +149,8 @@ span.Landing-csstudent{
 	border-radius: 15px;
 	margin-top: -20px;
 	font-size: 1.75rem;
-    box-shadow: 0.5px 0.5px 12px rgba(102,252,241,0.63);
+    -webkit-box-shadow: 0.5px 0.5px 12px rgba(102,252,241,0.63);
+            box-shadow: 0.5px 0.5px 12px rgba(102,252,241,0.63);
 }
 .crs-fourth{
 	height: 60px;
@@ -139,11 +195,15 @@ span.Landing-csstudent{
 }
 .text-left{
 	text-align: left;
-	justify-content: left;
+	-webkit-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
 }
 .text-center{
 	text-align: center;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .color-e2e2e2{
 	color: #e2e2e2;
@@ -157,18 +217,25 @@ span.Landing-csstudent{
 	margin-top: 40px;
 }
 .flexbox{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .flex-center{
-	justify-content: center;
-	flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-align: center;
 }
 .hide{
 	visibility: hidden;
 }
 .web-color{
-	color: #5AFEED !important;
+	color: #367AEF !important;
 }
 .mobile-color {
 	color: rgb(43, 255, 0) !important;
@@ -183,7 +250,7 @@ span.Landing-csstudent{
 	color: rgb(250, 149, 34) !important;
 }
 .other-color{
-	color: #367AEF !important;
+	color: rgb(140, 0, 255) !important;
 }
 .ywc-blue-color{
 	color: #5AFEED;
@@ -193,4 +260,50 @@ span.Landing-csstudent{
 }
 .inline{
 	display: inline-block;
+}
+
+@-webkit-keyframes register{
+	0%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	25%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	50%{
+		background-color: rgb(251, 255, 0);
+		color: #000;
+	}
+	75%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	100%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+}
+
+@keyframes register{
+	0%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	25%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	50%{
+		background-color: rgb(251, 255, 0);
+		color: #000;
+	}
+	75%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	100%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
 }
