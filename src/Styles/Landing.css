@@ -31,6 +31,7 @@
     margin: 2vh 1vw;
     color: rgb(251, 255, 0) !important;
 	border-color: rgb(251, 255, 0) !important;
+	animation: register 3s ease infinite;
 }
 span.Landing-register-text{
 	color: #BFC0C3 !important;
@@ -168,7 +169,7 @@ span.Landing-csstudent{
 	visibility: hidden;
 }
 .web-color{
-	color: #5AFEED !important;
+	color: #367AEF !important;
 }
 .mobile-color {
 	color: rgb(43, 255, 0) !important;
@@ -183,7 +184,7 @@ span.Landing-csstudent{
 	color: rgb(250, 149, 34) !important;
 }
 .other-color{
-	color: #367AEF !important;
+	color: rgb(140, 0, 255) !important;
 }
 .ywc-blue-color{
 	color: #5AFEED;
@@ -193,4 +194,27 @@ span.Landing-csstudent{
 }
 .inline{
 	display: inline-block;
+}
+
+@keyframes register{
+	0%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	25%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	50%{
+		background-color: rgb(251, 255, 0);
+		color: #000;
+	}
+	75%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
+	100%{
+		background-color: rgba(0, 0, 0, 0);
+		color: #fff;
+	}
 }
