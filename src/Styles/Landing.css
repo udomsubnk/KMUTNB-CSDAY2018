@@ -1,26 +1,24 @@
 .Landing{
     width: 100%;
-    border: 1px solid #fff;
     color: #fff;
     top: 106px;
 }
 @media (min-height: 480px){
     .Landing{
-        min-height: calc(100vh - 80px);
+        min-height: calc(95vh);
     }
 }
 @media (max-height: 400px){
     .Landing{
-        min-height: calc(180vh - 80px);
+        min-height: calc(179vh);
     }
 }
 .Landing-logo{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .Landing-calltoaction{
     margin: auto;
-    margin-top: 4vh;
-    margin-bottom: 2vh;
+    margin-top: 6vh;
 }
 .Landing-register{
     padding: .5rem 2rem !important;
