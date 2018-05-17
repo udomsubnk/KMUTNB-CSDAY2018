@@ -7,7 +7,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="Landing">
-        <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="230px" className="Landing-logo"/>
+        <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="180px" className="Landing-logo"/>
         <h1>KMUTNB CSDAY 2018</h1>
         <h1 className="Landing-preparetext">เตรียมพบกับ!! งานประกวดเทคโนโลยีสุดยิ่งใหญ่</h1>
         <h2 className="inline">ของ<span className="Landing-csstudent">นักศึกษาภาควิชาคอมพิวเตอร์</span></h2>
