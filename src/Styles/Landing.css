@@ -14,11 +14,14 @@
     }
 }
 .Landing-logo{
-    margin-top: 50px;
+	margin-top: 50px;
+}
+.Landing-preparetext{
+	margin-top: 20px;
 }
 .Landing-calltoaction{
     margin: auto;
-    margin-top: 6vh;
+    margin-top: 5vh;
 }
 .Landing-register{
     padding: .5rem 2rem !important;
@@ -26,8 +29,14 @@
     line-height: 2 !important;
     border-radius: 1rem !important;
     margin: 2vh 1vw;
-    color: #5AFEED !important;
-    border-color: #5AFEED !important;
+    color: rgb(251, 255, 0) !important;
+	border-color: rgb(251, 255, 0) !important;
+}
+span.Landing-register-text{
+	color: #BFC0C3 !important;
+}
+span.Landing-csstudent{
+	border-bottom: 2px solid rgb(251, 255, 0);
 }
 .Landing-viewmore {
     padding: .5rem 2rem !important;
@@ -49,7 +58,7 @@
 	border: 1px solid #5AFEED;
 	margin: auto;
     position:relative;
-    background-color: #222;
+    background-color: #000;
 }
 .Carousel-item-text{
 	padding: 10px;
@@ -165,7 +174,7 @@
 	color: rgb(43, 255, 0) !important;
 }
 .ml-color{
-	color: #E0F357 !important;
+	color: rgb(251, 255, 0) !important;
 }
 .system-color{
 	color: #E7494E !important;
