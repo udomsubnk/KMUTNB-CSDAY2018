@@ -7,44 +7,41 @@ class Navbar extends Component {
     return (
     <div className="nav">
       <div className="nav-menu">
-        <a className="nav-landing" href="">
-          <Link 
-            activeClass="active"
-            spy={true} 
-            smooth={true} 
-            duration={500}
-            to="scroll-landing"
-          >
-            landing
-          </Link>
-        </a>
-        <a className="nav-date" href="">
-          <Link 
-            activeClass="active"
-            spy={true} smooth={true} duration={500}
-            to="scroll-date"
-          >
-            date
-          </Link>
-        </a>
-        <a className="nav-detail" href="">
-          <Link 
-            activeClass="active"
-            spy={true} smooth={true} duration={500}
-            to="scroll-detail"
-          >
-            detail
-          </Link>
-        </a>
-        <a className="nav-location" href="">
-          <Link 
-            activeClass="active"
-            spy={true} smooth={true} duration={500}
-            to="scroll-location"
-          >
-            location
-          </Link>
-        </a>
+        <Link
+          activeClass="active"
+          spy={true} smooth={true} duration={500}
+          className="nav-item"
+        >
+          <a className="nav-landing">landing</a>
+        </Link>
+        <Link 
+          activeClass="active"
+          spy={true} smooth={true} duration={500}
+          to="scroll-date"
+          className="nav-item"
+        >
+          <a className="nav-date">date</a>
+        </Link>
+        <div className="nav-logo">
+          <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="50px" className=""/>
+        </div>
+        <Link 
+          activeClass="active"
+          spy={true} smooth={true} duration={500}
+          to="scroll-detail"
+          className="nav-item"
+        >
+          <a className="nav-detail">detail</a>
+        </Link>
+        <Link 
+          activeClass="active"
+          spy={true} smooth={true} duration={500}
+          to="scroll-location"
+          className="nav-item"
+        >
+          <a className="nav-location">location</a>
+        </Link>
+
       </div>
     </div>
     );
