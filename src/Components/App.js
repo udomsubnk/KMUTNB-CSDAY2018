@@ -22,7 +22,7 @@ class App extends Component {
       <div>
         <Navbar />
         <div className="App">
-          <div className="white">
+          {/* <div className="white">
             <br /><br /><br /><br /><br />
             <h2>เนื้อหาที่ต้องมี</h2>
             <br />ref: <a href="http://2017.barcampbangkhen.org/"> barcamp </a>
@@ -30,7 +30,7 @@ class App extends Component {
             <br />-DateAndTime : schedule จัดที่ไหน เมื่อไหร่
             <br />-Detail : WHAT IS BARCAMP?, PARTICIPANTS, REASONS TO COME      
             <br />-Location : map ชี้มามหาลัย, ตัวหนังสือบอกสถานที่,ที่จอดรถ
-          </div>
+          </div> */}
           <Landing />
           <DateAndTime />
           <Detail />
