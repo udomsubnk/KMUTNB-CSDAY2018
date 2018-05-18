@@ -16,7 +16,11 @@ class Landing extends Component {
         </div>
         <Carousel />
         <div className="Landing-calltoaction">
-          <Button outline color="primary" size="lg" className="Landing-register" href="https://docs.google.com/forms/d/e/1FAIpQLSd1MoDN5sd6t0pDZRE85aePMoUm4aTjKObXAUP6EohqAqsKKw/viewform" target="_blank">
+          <Button outline color="primary" size="lg" className="Landing-register" 
+            // href="https://docs.google.com/forms/d/e/1FAIpQLSd1MoDN5sd6t0pDZRE85aePMoUm4aTjKObXAUP6EohqAqsKKw/viewform" 
+            href="http://th.spankbang.com/7x91/video/063+sw251"
+            target="_blank"
+          >
             ลงทะเบียนเข้าร่วมงาน
           </Button>
           <br />
