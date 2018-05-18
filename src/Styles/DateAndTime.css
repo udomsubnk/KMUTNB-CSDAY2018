@@ -5,3 +5,17 @@
     border: 1px solid greenyellow;
     color: greenyellow;
 }
+
+.time-table {
+    display: flex;
+}
+
+.left-side{
+    width: 50%;
+
+}
+
+.right-side{
+    width: 50%;
+    border-left:2px solid greenyellow;
+}   
