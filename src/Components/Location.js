@@ -14,7 +14,10 @@ class Location extends Component {
           </div>
         </div>
         <div className="content-location halfnaja">
-          Location
+          <div className="content-location-header mgl40">Location</div>
+          <div className="content-location-body mgl40">Department of Computer Science</div>
+          <div className="content-location-body mgl40">Faculty of Applied Science</div>
+          <div className="content-location-footer mgl40">ที่จอดรถฟรี !!</div>
         </div>        
       </div>
     );
