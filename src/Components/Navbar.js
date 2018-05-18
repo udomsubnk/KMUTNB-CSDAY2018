@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import '../Styles/Navbar.css';
 import { Link } from 'react-scroll'
+import HambergerNav from './HambergerNav'
 
 class Navbar extends Component {
   render() {
+
     return (
     <div className="nav">
       <div className="nav-menu">
@@ -41,6 +43,9 @@ class Navbar extends Component {
         >
           location
         </Link>
+      </div>
+      <div className="hamberger">
+        <HambergerNav/>
       </div>
     </div>
     );
