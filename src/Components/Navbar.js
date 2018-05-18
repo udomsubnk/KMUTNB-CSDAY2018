@@ -12,7 +12,7 @@ class Navbar extends Component {
           spy={true} smooth={true} duration={500}
           className="nav-item"
         >
-          <a className="nav-landing">landing</a>
+          landing
         </Link>
         <Link 
           activeClass="active"
@@ -20,7 +20,7 @@ class Navbar extends Component {
           to="scroll-date"
           className="nav-item"
         >
-          <a className="nav-date">date</a>
+          date
         </Link>
         <div className="nav-logo">
           <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="50px" className=""/>
@@ -31,7 +31,7 @@ class Navbar extends Component {
           to="scroll-detail"
           className="nav-item"
         >
-          <a className="nav-detail">detail</a>
+          detail
         </Link>
         <Link 
           activeClass="active"
@@ -39,7 +39,7 @@ class Navbar extends Component {
           to="scroll-location"
           className="nav-item"
         >
-          <a className="nav-location">location</a>
+          location
         </Link>
       </div>
     </div>
