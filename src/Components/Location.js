@@ -8,7 +8,7 @@ import '../Styles/Location.css';
 class Location extends Component {
   render() {
     return (
-      <Element name="scroll-location">
+      <Element className="mgt-global-20" name="scroll-location">
         <div className="Location">
           <div className="map-location halfnaja">
             <div className="map-google">

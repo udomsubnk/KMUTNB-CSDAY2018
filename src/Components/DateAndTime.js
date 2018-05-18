@@ -38,7 +38,7 @@ export default class DateAndTime extends Component {
     ))
 
     return (
-      <Element name="scroll-date">
+      <Element className="mgt-global-20" name="scroll-date">
         <div className="DateAndTime" data-aos="fade-up">
           <div className="title-section">
             <h1>DATE AND TIME</h1>
