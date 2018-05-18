@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import '../Styles/DateAndTime.css';
 
-
 class DateAndTime extends Component {
   render() {
     return (
-      <div className="DateAndTime">
+      <div className="DateAndTime" data-aos="fade-up">
         <h1>This is DateAndTime component</h1>
       </div>
     );
