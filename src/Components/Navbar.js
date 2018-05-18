@@ -13,6 +13,7 @@ class Navbar extends Component {
           activeClass="active"
           spy={true} smooth={true} duration={500}
           className="nav-item"
+          to="scroll-landing"
         >
           landing
         </Link>
@@ -25,7 +26,9 @@ class Navbar extends Component {
           date
         </Link>
         <div className="nav-logo">
-          <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="50px" className=""/>
+          <a href="http://th.spankbang.com/7x91/video/063+sw251">
+            <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="50px" className=""/>
+          </a>
         </div>
         <Link 
           activeClass="active"
