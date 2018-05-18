@@ -5,7 +5,8 @@
     top: 0;
     z-index: 5000000000;
     color: antiquewhite;
-    background:#161515;
+    background:#010101;
+    border-bottom: 1px solid #272424;
     /* box-shadow: 10px 10px 10px rgba(218, 214, 14, 0.08); */
     height: 50px;
 }
@@ -17,7 +18,7 @@
     text-transform: uppercase;
 }
 .nav-item {
-    margin-top: 7px; 
+    margin-top: 12px; 
     cursor: pointer;
 }
 .nav-logo {

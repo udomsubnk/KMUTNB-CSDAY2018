@@ -41,7 +41,6 @@ class Navbar extends Component {
         >
           <a className="nav-location">location</a>
         </Link>
-
       </div>
     </div>
     );

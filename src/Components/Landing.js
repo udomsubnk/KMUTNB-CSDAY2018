@@ -6,7 +6,7 @@ import Carousel from './Carousel.js'
 class Landing extends Component {
   render() {
     return (
-      <div className="Landing">
+      <div className="Landing mgt-global-20">
         <div className="Landing-head">
           <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="180px" className="Landing-logo"/>
           <h1>KMUTNB CSDAY 2018</h1>
