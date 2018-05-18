@@ -1,5 +1,6 @@
 import { slide as HambergerMenu } from 'react-burger-menu'
 import { Link } from 'react-scroll'
+import { NavMenu } from './NavMenu'
 
 import React from 'react'
 
@@ -29,9 +30,12 @@ const styles = {
     fill: '#373a47'
   },
   bmItemList: {
-    color: '#b8b7ad',
+    marginTop: '40px',
+    color: '#fff',
+    fontWeight:'800',
     padding: '0.8em'
   },
+
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'
   }
@@ -48,39 +52,21 @@ export default class HambergerNav extends React.Component {
 
   render() {
     return(
-      <HambergerMenu className="hamberger" width="250px" isOpen={this.state.isOpen} styles={styles}>
-        <Link
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          to="scroll-landing"
-          className="nav-item"
-        >
-          <div onClick={this.closeHamberger}>landing</div>
-        </Link>
-        <Link 
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          to="scroll-date"
-          className="nav-item"
-        >
-          <div onClick={this.closeHamberger}>date</div>
-        </Link>
-        <Link 
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          to="scroll-detail"
-          className="nav-item"
-        >
-          <div onClick={this.closeHamberger}>detail</div>
-        </Link>
-        <Link 
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          to="scroll-location"
-          className="nav-item"
-        >
-          <div onClick={this.closeHamberger}>location</div>
-        </Link>
+      <HambergerMenu width="250px" isOpen={this.state.isOpen} styles={styles}>
+        <div className='hamberger'>
+          <NavMenu name='landing'>
+            <p onClick={this.closeHamberger}>landing</p>
+          </NavMenu>
+          <NavMenu name='date'>
+            <p onClick={this.closeHamberger}>date</p>
+          </NavMenu>
+          <NavMenu name='detail'>
+            <p onClick={this.closeHamberger}>detail</p>
+          </NavMenu>
+          <NavMenu name='location'>
+            <p onClick={this.closeHamberger}>location</p>
+          </NavMenu>
+        </div>
       </HambergerMenu>
     )
   }

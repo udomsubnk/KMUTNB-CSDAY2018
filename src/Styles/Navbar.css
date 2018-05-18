@@ -11,9 +11,10 @@
 }
 .nav-menu {
     color: #83d0f2;
-    font-weight: 900;
+    /* color: #fff; */
+    font-weight: 1000;
     font-size: 1.1rem;
-    letter-spacing: .02em;
+    letter-spacing: .01em;
     max-width: 1440;
     width: 1400px;
     display: flex;
@@ -36,5 +37,7 @@
 @media (max-width: 768px) {
     .hamberger { display: block; }
     .nav-menu { display: none; }
-    .nav-item { display: none; }
+    .hamberger {
+        text-transform: uppercase;
+    }
 }

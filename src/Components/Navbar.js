@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../Styles/Navbar.css';
 import { Link } from 'react-scroll'
+import { NavMenu } from './NavMenu'
 import HambergerNav from './HambergerNav'
 
 class Navbar extends Component {
@@ -9,43 +10,15 @@ class Navbar extends Component {
     return (
     <div className="nav">
       <div className="nav-menu">
-        <Link
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          className="nav-item"
-          to="scroll-landing"
-        >
-          landing
-        </Link>
-        <Link 
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          to="scroll-date"
-          className="nav-item"
-        >
-          date
-        </Link>
+        <NavMenu name='landing'>landing</NavMenu>
+        <NavMenu name='date'>date</NavMenu>
         <div className="nav-logo">
           <a href="http://th.spankbang.com/7x91/video/063+sw251">
             <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="50px" className=""/>
           </a>
         </div>
-        <Link 
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          to="scroll-detail"
-          className="nav-item"
-        >
-          detail
-        </Link>
-        <Link 
-          activeClass="active"
-          spy={true} smooth={true} duration={500}
-          to="scroll-location"
-          className="nav-item"
-        >
-          location
-        </Link>
+        <NavMenu name='detail'>detail</NavMenu>
+        <NavMenu name='location'>location</NavMenu>
       </div>
       <div className="hamberger">
         <HambergerNav/>
