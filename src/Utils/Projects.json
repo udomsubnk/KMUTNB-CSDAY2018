@@ -18,7 +18,7 @@
     {"name":"โปรแกรมตรวจจับป้ายจราจรจากรูปภาพพาโนราม่า(360◦) ","type":"ML & Data analytics"},
     {"name":"โปรแกรมตรวจสอบคุณภาพของแตงโมบนมือถือ ","type":"Mobile Application"},
     {"name":"พบแล้วแจ้งเลย(โปรแกรมแจ้งและจัดการข้อมูลผู้กระทำความผิดบนทางเท้า) ","type":"Mobile Application"},
-    {"name":"พัฒนา ","type":"Mobile application สำหรับบันทึกค่า GNSS Satellite raw data ","type":"Mobile Application"},
+    {"name":"GNSS Satellite raw data Application","type":"Mobile Application"},
     {"name":"เพลี้ย เพลี้ย ","type":"Web Apllication"},
     {"name":"แพลตฟอร์มสำหรับผู้แนะนำการลงทุน ","type":"Web Apllication"},
     {"name":"โมดูลกลางของเว็บไซต์และระบบการทำบัญชี ","type":"Web Apllication"},
