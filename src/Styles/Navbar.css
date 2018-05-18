@@ -1,7 +1,28 @@
-.Navbar{
-    height: 80px;
-    width: 100%;
-    background-color: white;
+.nav{
     position: fixed;
-    top:0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5000000000;
+    color: antiquewhite;
+    background:#161515;
+    /* box-shadow: 10px 10px 10px rgba(218, 214, 14, 0.08); */
+    height: 50px;
+}
+.nav-menu{
+    max-width: 1440;
+    width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.nav-item {
+    margin-top: 7px; 
+    cursor: pointer;
+}
+.nav-logo {
+    margin-top: 7px; 
+}
+.Landing-logo {
+
 }
