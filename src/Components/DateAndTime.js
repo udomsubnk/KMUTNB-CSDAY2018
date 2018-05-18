@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Element } from 'react-scroll'
 import '../Styles/DateAndTime.css';
 
 export default class DateAndTime extends Component {
@@ -37,15 +38,17 @@ export default class DateAndTime extends Component {
     ))
 
     return (
-      <div className="DateAndTime" data-aos="fade-up">
-        <div className="title-section">
-          <h1>DATE AND TIME</h1>
-          <h2>28 June 2018</h2>
+      <Element name="scroll-date">
+        <div className="DateAndTime" data-aos="fade-up">
+          <div className="title-section">
+            <h1>DATE AND TIME</h1>
+            <h2>28 June 2018</h2>
+          </div>
+          <div className="time-table">
+            {activityItems}
+          </div>
         </div>
-        <div className="time-table">
-          {activityItems}
-        </div>
-      </div>
+      </Element>
     )
   }
 }
