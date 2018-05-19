@@ -25,7 +25,7 @@ class Landing extends Component {
               ลงทะเบียนเข้าร่วมงาน
             </Button>
             <br />
-            <span className="Landing-register-text">สำหรับบุคคลภายนอก หน่วยงานหรือบริษัทที่สนใจเข้าเยี่ยมชม</span>
+            <span className="Landing-register-text">สำหรับบุคคลภายนอกมหาวิทยาลัยที่สนใจเข้าเยี่ยมชม</span>
           </div>
         </div>
       </Element>
