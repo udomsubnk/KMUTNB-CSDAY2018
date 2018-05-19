@@ -3,17 +3,37 @@ import '../Styles/Navbar.css';
 import { Link } from 'react-scroll'
 import { NavMenu } from './NavMenu'
 import HambergerNav from './HambergerNav'
-import $ from 'jquery';
+
 class Navbar extends Component {
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.onScroll)
+    document.getElementById('nav-bar').style.display = 'none'
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll)
+  }
+
+  onScroll = () => {
+    if(window.scrollY < 200) {
+      document.getElementById('nav-bar').style.display = 'none'
+    }else {
+      document.getElementById('nav-bar').style.display = 'block'
+    }
+  }
+
   render() {
     return (
-    <div className="nav">
+    <div id='nav-bar' className="nav">
       <div className="nav-menu">
         <NavMenu name='landing'>landing</NavMenu>
         <NavMenu name='date'>date & time</NavMenu>
-        <div className="nav-logo">
-            <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" className=""/>
-        </div>
+        <NavMenu name='landing'>
+          <div className="nav-logo">
+              <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" className=""/>
+          </div>
+        </NavMenu>
         <NavMenu name='detail'>detail</NavMenu>
         <NavMenu name='location'>location</NavMenu>
       </div>
@@ -24,16 +44,5 @@ class Navbar extends Component {
     );
   }
 }
-$(document).ready(()=>{
-  $('.nav').hide()
-  $(window).scroll(()=>{
-    if($(window).scrollTop() <= 150){
-      $('.nav').hide()
-    }
-    else $('.nav').show()
-  })
-  $('.nav-logo').click(()=>{
-    $('html,body').animate({ scrollTop: 0 }, 'slow');
-  })
-})
+
 export default Navbar;
