@@ -6,13 +6,11 @@ export default class Table extends React.Component {
   state = {
     projects: [],
     projectsByType: [],
-    scrollY: 0
   }
 
   componentDidMount() {
     const projects = this.changeData(data)
     this.setState({ 
-      scrollY: 9999,
       projects, 
       projectsByType: projects 
     })
@@ -67,8 +65,7 @@ export default class Table extends React.Component {
         <div className="main-table">
           <div className="wrap-table">
             <div id='table' className="project-table">
-              {
-                this.state.projectsByType.map((project) => (
+              { this.state.projectsByType.map((project) => (
                   <div key={project.id} className="project-list">
                     <p className="mgt10">{project.name}</p>
                   </div>
