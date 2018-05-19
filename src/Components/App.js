@@ -17,14 +17,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div style={{
-        overflow: "hidden"
-      }}>
+
+      <Element name="scroll-landing">
         <StarfieldCanvas/>
         <Navbar/>
-        <Element name="scroll-landing">
-          <div className="App">
-            {/* <div className="white">
+        <div className="App">
+          {/* <div className="white">
               <br /><br /><br /><br /><br />
               <h2>เนื้อหาที่ต้องมี</h2>
               <br />ref: <a href="http://2017.barcampbangkhen.org/"> barcamp </a>
@@ -33,15 +31,14 @@ class App extends Component {
               <br />-Detail : WHAT IS BARCAMP?, PARTICIPANTS, REASONS TO COME
               <br />-Location : map ชี้มามหาลัย, ตัวหนังสือบอกสถานที่,ที่จอดรถ
             </div> */}
-            <Landing/>
-            <Detail/>
-            <DateAndTime/>
-            <Location/>
-            <Contact/>
-            <Footer/>
-          </div>
-        </Element>
-      </div>
+          <Landing/>
+          <Detail/>
+          <DateAndTime/>
+          <Location/>
+          <Contact/>
+          <Footer/>
+        </div>
+      </Element>
     );
   }
 }
