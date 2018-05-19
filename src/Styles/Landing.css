@@ -16,10 +16,10 @@
     }
 }
 @media (min-width: 300px) {
-	h1{
+	.Landing h1{
 		font-size: 1.75rem !important;
 	}
-	h2{
+	.Landing h2{
 		font-size: 1.4rem !important;
 	}
 	.crs-first{
@@ -39,10 +39,10 @@
 	}
 }
 @media (min-width: 900px) {
-	h1{
+	.Landing h1{
 		font-size: 1.8rem !important;
 	}
-	h2{
+	.Landing h2{
 		font-size: 1.5rem !important;
 	}
 	.crs-first{

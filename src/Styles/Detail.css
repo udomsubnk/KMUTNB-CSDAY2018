@@ -4,3 +4,9 @@
     color: red;
     margin-top: 20px;
 }
+.Detail-textalign-left{
+    text-align: left !important;
+}
+.Detail-title{
+    font-weight: bolder;
+}
