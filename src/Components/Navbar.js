@@ -18,7 +18,7 @@ class Navbar extends Component {
     if(window.scrollY < 200) {
       document.getElementById('nav-bar').style.display = 'none'
     }else {
-      document.getElementById('nav-bar').style.display = 'block'
+      document.getElementById('nav-bar').style.display = ''
     }
   }
 
@@ -26,15 +26,23 @@ class Navbar extends Component {
     return (
     <div id='nav-bar' className="nav">
       <div className="nav-menu">
-        <NavMenu name='landing'>Home</NavMenu>
-        <NavMenu name='detail'>detail</NavMenu>
+        <NavMenu name='landing'>
+          <p className="nav-text">landing</p>
+        </NavMenu>
+        <NavMenu name='date'>
+          <p className="nav-text">date & time</p>
+        </NavMenu>
         <NavMenu name='landing'>
           <div className="nav-logo">
-              <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="120px" className=""/>
+              <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" />
           </div>
         </NavMenu>
-        <NavMenu name='date'>date & time</NavMenu>
-        <NavMenu name='location'>location</NavMenu>
+        <NavMenu name='detail'>
+          <p className="nav-text">detail</p>
+        </NavMenu>
+        <NavMenu name='location'>
+          <p className="nav-text">location</p>
+        </NavMenu>
       </div>
       <div className="hamberger">
         <HambergerNav/>
