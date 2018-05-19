@@ -8,9 +8,9 @@ class Detail extends Component {
     return (
       <Element className="mgt-global-20" name="scroll-detail">
         <div className="Detail Detail-textalign-left" data-aos="fade-up">
-          <h1 className="Detail-title">WHAT IS CS DAY?</h1>     
-          
-             
+          <h1>WHAT IS CS DAY?</h1>     
+          <h1>PARTICIPANTS</h1>
+          <h1>REASONS TO COME</h1>
         </div>
       </Element>
     );
