@@ -15,11 +15,16 @@
     font-size: 1.1rem;
     letter-spacing: .01em;
     max-width: 1440;
-    width: 1400px;
+    width: 1440px;
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
     padding: 10px;
+    animation: opacity 4s;
+}
+.nav-text:hover {
+    color: rgb(181, 245, 238);
+    transition: all 0.8s;
 }
 .nav-item {
     margin-top: 12px; 
@@ -51,6 +56,14 @@
     }
     100%{
         opacity: 1;
-        transform: translateY(0px)
+        transform: translateY(100px)
+    }
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 2;
     }
 }
