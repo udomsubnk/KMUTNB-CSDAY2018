@@ -7,9 +7,11 @@
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "react": "^16.3.2",
+    "react-burger-menu": "^2.4.4",
     "react-dom": "^16.3.2",
     "react-google-maps": "^9.4.5",
     "react-scripts": "1.1.4",
+    "react-scroll": "^1.7.9",
     "reactstrap": "^6.0.1",
     "recompose": "^0.27.0"
   },

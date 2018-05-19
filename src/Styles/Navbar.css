@@ -1,7 +1,43 @@
-.Navbar{
-    height: 80px;
-    width: 100%;
-    background-color: white;
+.nav {
     position: fixed;
-    top:0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5000000000;
+    background:#010101;
+    border-bottom: 1px solid #272424;
+    /* box-shadow: 10px 10px 10px rgba(218, 214, 14, 0.08); */
+    height: 50px;
+}
+.nav-menu {
+    color: #83d0f2;
+    /* color: #fff; */
+    font-weight: 1000;
+    font-size: 1.1rem;
+    letter-spacing: .01em;
+    max-width: 1440;
+    width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.nav-item {
+    margin-top: 12px; 
+    cursor: pointer;
+}
+.nav-logo {
+    margin-top: 7px; 
+}
+.xxx {
+    display: none;
+}
+.hamberger {
+    display: none;
+}
+@media (max-width: 768px) {
+    .hamberger { display: block; }
+    .nav-menu { display: none; }
+    .hamberger {
+        text-transform: uppercase;
+    }
 }
