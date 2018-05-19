@@ -3,7 +3,7 @@ import '../Styles/Navbar.css';
 import { Link } from 'react-scroll'
 import { NavMenu } from './NavMenu'
 import HambergerNav from './HambergerNav'
-
+import $ from 'jquery';
 class Navbar extends Component {
   render() {
 
@@ -27,5 +27,12 @@ class Navbar extends Component {
     );
   }
 }
-
+$(document).ready(()=>{
+  $(window).scroll(()=>{
+    if($(window).scrollTop() <= 150){
+      $('.nav').hide()
+    }
+    else $('.nav').show()
+  })
+})
 export default Navbar;

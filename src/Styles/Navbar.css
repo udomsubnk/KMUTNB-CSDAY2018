@@ -6,12 +6,11 @@
     z-index: 5000000000;
     background:#010101;
     border-bottom: 1px solid #272424;
-    /* box-shadow: 10px 10px 10px rgba(218, 214, 14, 0.08); */
-    height: 50px;
+    height: 80px;
+    animation: appear 0.5s ease;
 }
 .nav-menu {
     color: #83d0f2;
-    /* color: #fff; */
     font-weight: 1000;
     font-size: 1.1rem;
     letter-spacing: .01em;
@@ -39,5 +38,15 @@
     .nav-menu { display: none; }
     .hamberger {
         text-transform: uppercase;
+    }
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
     }
 }
