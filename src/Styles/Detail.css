@@ -1,12 +1,22 @@
 .Detail{
     width: 100%;
-    height: 400px;
-    color: red;
     margin-top: 20px;
+}
+.Detail * {
+    word-break: break-all;
 }
 .Detail-textalign-left{
     text-align: left !important;
 }
 .Detail h1{
     font-weight: 600;
+}
+.Detail-mgtitem{
+    margin-top: 13vh;
+}
+.Detail-content{
+    font-size: 1.5rem;
+    line-height: 200%;
+    margin-top: 30px;
+    color: #e0e0e0;
 }
