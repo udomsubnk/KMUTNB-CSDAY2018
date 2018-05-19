@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  max-width: 900px;
+  width: 900px;
+  max-width: 100vw;
   margin: auto;
 }
 .mgt-global-20 {
