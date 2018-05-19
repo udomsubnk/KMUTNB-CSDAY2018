@@ -44,10 +44,9 @@
     border-radius: 50%;
     background-color: #212529;
     left: 0;
-    transform: translate(calc(-50% - 1px));
+    transform: translate(calc(-50% - 1px),2px);
 
 }
-
 
 .time-table-item:last-child > .activity , .time-table-item:last-child > .time{
     padding-bottom: 12px;
