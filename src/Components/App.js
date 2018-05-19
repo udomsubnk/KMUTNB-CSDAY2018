@@ -33,8 +33,8 @@ class App extends Component {
               <br />-Location : map ชี้มามหาลัย, ตัวหนังสือบอกสถานที่,ที่จอดรถ
             </div> */}
             <Landing />
-            <DateAndTime />
             <Detail />
+            <DateAndTime />
             <Location />
             <Footer />
           </div>
