@@ -6,17 +6,28 @@ export default class TimeTable extends Component {
   state = {
     activities: [
       {
-        time: "10:01 - 10:02",
-        activity: "Start"
+        time: "10:00",
+        activity: "Start Registration & Voting"
       }, {
-        time: "10:02 - 10:03",
-        activity: "Start Again"
+        time: "13:30 - 14:00",
+        activity: "1st Session"
       }, {
-        time: "10:03 - 10:04",
-        activity: "Start Again And Again"
+        time: "14:00 - 14:30",
+        activity: "2nd Session"
       }, {
-        time: "10:04 - 10:05",
-        activity: "Start Again And Again And Again"
+        time: "14:30 - 15:00",
+        activity: "3rd Session"
+      }, {
+        time: "16:00",
+        activity: "Close Voting"
+      }
+      , {
+        time: "16:30",
+        activity: "Awards Announcement"
+      }
+      , {
+        time: "17:00",
+        activity: "End"
       }
     ]
   }

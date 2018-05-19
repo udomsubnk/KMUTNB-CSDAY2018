@@ -14,11 +14,9 @@ export default class DateAndTime extends Component {
           </div>
           <div className="right-side">
             <h1>PLACE</h1>
-            <h2 data-aos="fade-left">APPLIED SCIENCE BUILDING (78)</h2>
-            <h2 data-aos="fade-left">KING MONGKUT'S UNIVERSITY
-              <br/>OF TECHNOLOGY
-              NORTH BANGKOK</h2>
-              {/* <h2>KMUTNB</h2> */}
+            <h2 data-aos="fade-left">คณะวิทยาศาสตร์ประยุกต์ (78)</h2>
+            <h2 data-aos="fade-left">มหาวิทยาลัย
+              <br/>เทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
           </div>
         </div>
         <Activities/>

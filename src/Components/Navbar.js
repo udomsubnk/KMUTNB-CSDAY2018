@@ -10,7 +10,7 @@ class Navbar extends Component {
     <div className="nav">
       <div className="nav-menu">
         <NavMenu name='landing'>landing</NavMenu>
-        <NavMenu name='date'>date</NavMenu>
+        <NavMenu name='date'>date & time</NavMenu>
         <div className="nav-logo">
             <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" className=""/>
         </div>
