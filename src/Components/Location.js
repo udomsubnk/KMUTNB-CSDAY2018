@@ -9,7 +9,7 @@ class Location extends Component {
   render() {
     return (
       <Element className="mgt-global-20" name="scroll-location">
-        <div className="Location">
+        <div className="Location" data-aos="fade-up">
           <div className="map-location halfnaja">
             <div className="map-google">
               <Map/>

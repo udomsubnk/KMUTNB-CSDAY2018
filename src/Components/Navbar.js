@@ -25,6 +25,7 @@ class Navbar extends Component {
   }
 }
 $(document).ready(()=>{
+  $('.nav').hide()
   $(window).scroll(()=>{
     if($(window).scrollTop() <= 150){
       $('.nav').hide()
