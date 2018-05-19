@@ -1,5 +1,4 @@
 .Location{
-    display: table;
     width: 100%;
     color: yellow;
 }
@@ -18,7 +17,6 @@
     vertical-align: middle;
 }
 .map-google{
-    /* width: 400px; */
     /* height: 400px; */
 }
 .mgl40{
@@ -38,4 +36,25 @@
     font-size: 30px;
     color: rgb(113, 111, 211);
 }
+
+@media (max-width: 768px) {
+    .Location{
+        width: 100%;
+        color: yellow;
+    }
+    .halfnaja {
+        display: block;
+    }
+    .content-location {
+        text-align: center;
+        width: 100%;
+    }
+    .map-location {
+        padding-left: 0;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* padding-left: 3rem; */
+        /* margin: auto; */
+    }
+} 
   
