@@ -10,7 +10,7 @@ const styles = {
     width: '25px',
     height: '25px',
     left: '36px',
-    top: '13px'
+    top: '25px'
   },
   bmBurgerBars: {
     background: '#373a47'
@@ -43,9 +43,13 @@ const styles = {
 
 export default class HambergerNav extends React.Component {
   state = {
-    isOpen: false
+    isOpen: false,
   }
 
+  componentDidMount() {
+    window.onscroll = this.closeHamberger
+  }
+  
   closeHamberger = () => {
     this.setState({ isOpen: false })
   }
