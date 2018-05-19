@@ -6,11 +6,11 @@
     z-index: 5000000000;
     background:#010101;
     border-bottom: 1px solid #272424;
-    height: 80px;
+    height: 70px;
     animation: appear 0.5s ease;
 }
 .nav-menu {
-    color: #83d0f2;
+    color: #5AFEED;
     font-weight: 1000;
     font-size: 1.1rem;
     letter-spacing: .01em;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
+    padding: 10px;
 }
 .nav-item {
     margin-top: 12px; 
@@ -26,6 +27,9 @@
 }
 .nav-logo {
     margin-top: 7px; 
+}
+.nav-logo img {
+    margin-top: -15px;
 }
 .xxx {
     display: none;
