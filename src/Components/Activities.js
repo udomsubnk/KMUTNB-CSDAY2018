@@ -40,7 +40,7 @@ export default class TimeTable extends Component {
             margin: 0
           }}>{time}</h4>
         </div>
-        <div className="activity">
+        <div className="activity" data-aos="fade">
           <h5 data-aos="fade-left" style={{
             margin: 0
           }}>{activity}</h5>
