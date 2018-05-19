@@ -1,13 +1,11 @@
 .Location{
-    height: 450px;
     display: table;
     width: 100%;
-    border: 1px solid yellow;
     color: yellow;
 }
 
 .map-location {
-    padding-left: 9rem;
+    padding-left: 3rem;
     width: 50%;
 }
 .content-location {
