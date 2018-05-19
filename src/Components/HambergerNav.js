@@ -57,11 +57,11 @@ export default class HambergerNav extends React.Component {
           <NavMenu name='landing'>
             <p onClick={this.closeHamberger}>landing</p>
           </NavMenu>
-          <NavMenu name='date'>
-            <p onClick={this.closeHamberger}>date</p>
-          </NavMenu>
           <NavMenu name='detail'>
             <p onClick={this.closeHamberger}>detail</p>
+          </NavMenu>
+          <NavMenu name='date'>
+            <p onClick={this.closeHamberger}>date</p>
           </NavMenu>
           <NavMenu name='location'>
             <p onClick={this.closeHamberger}>location</p>

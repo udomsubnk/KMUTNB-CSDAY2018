@@ -30,16 +30,16 @@ class Navbar extends Component {
         <NavMenu name='landing'>
           <p className="nav-text">landing</p>
         </NavMenu>
-        <NavMenu name='date'>
-          <p className="nav-text">date & time</p>
+        <NavMenu name='detail'>
+          <p className="nav-text">detail</p>
         </NavMenu>
         <NavMenu name='landing'>
           <div className="nav-logo">
               <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" />
           </div>
         </NavMenu>
-        <NavMenu name='detail'>
-          <p className="nav-text">detail</p>
+        <NavMenu name='date'>
+          <p className="nav-text">date & time</p>
         </NavMenu>
         <NavMenu name='location'>
           <p className="nav-text">location</p>
