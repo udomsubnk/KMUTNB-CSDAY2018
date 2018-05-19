@@ -29,11 +29,11 @@ class Carousel extends Component {
 	}
 	getMajorColor = function(index){
         let type = '';
-        if(this.Data[index].type == "Mobile Application") type='mobile';
-        else if(this.Data[index].type == "Web Apllication") type='web';
-        else if(this.Data[index].type == "ML & Data analytics") type='ml';
-        else if(this.Data[index].type == "System(ระบบเบื้องหลัง)") type='system';
-        else if(this.Data[index].type == "Blockchain") type='blockchain';
+        if(this.Data[index].type === "Mobile Application") type='mobile';
+        else if(this.Data[index].type === "Web Apllication") type='web';
+        else if(this.Data[index].type === "ML & Data analytics") type='ml';
+        else if(this.Data[index].type === "System(ระบบเบื้องหลัง)") type='system';
+        else if(this.Data[index].type === "Blockchain") type='blockchain';
         else type="other";
 		return type + "-color";
 	}
