@@ -7,7 +7,7 @@ class Detail extends Component {
   render() {
     return (
       <Element className="mgt-global-20" name="scroll-detail">
-        <div className="Detail">
+        <div className="Detail" data-aos="fade-up">
           <h1>This is Detail component</h1>        
         </div>
       </Element>
