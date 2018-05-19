@@ -5,6 +5,7 @@ import Navbar from './Navbar.js'
 import DateAndTime from './DateAndTime.js'
 import Detail from './Detail.js'
 import Location from './Location.js'
+import Contact from './Contact.js'
 import Footer from './Footer.js'
 import AOS from 'aos';
 import { Element } from 'react-scroll'
@@ -33,9 +34,10 @@ class App extends Component {
               <br />-Location : map ชี้มามหาลัย, ตัวหนังสือบอกสถานที่,ที่จอดรถ
             </div> */}
             <Landing />
-            <DateAndTime />
             <Detail />
+            <DateAndTime />
             <Location />
+            <Contact />
             <Footer />
           </div>
         </Element>

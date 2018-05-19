@@ -5,6 +5,10 @@
 .Landing-head{
 	margin-bottom: 4vh;
 }
+.Landing-title{
+	font-size: 2.2rem !important;
+	font-weight: 500;
+}
 @media (min-height: 480px){
     .Landing{
         min-height: calc(95vh);
@@ -16,10 +20,10 @@
     }
 }
 @media (min-width: 300px) {
-	h1{
-		font-size: 1.75rem !important;
+	.Landing h1{
+		font-size: 1.75rem;
 	}
-	h2{
+	.Landing h2{
 		font-size: 1.4rem !important;
 	}
 	.crs-first{
@@ -39,10 +43,10 @@
 	}
 }
 @media (min-width: 900px) {
-	h1{
-		font-size: 1.8rem !important;
+	.Landing h1{
+		font-size: 1.8rem;
 	}
-	h2{
+	.Landing h2{
 		font-size: 1.5rem !important;
 	}
 	.crs-first{
@@ -62,7 +66,7 @@
 	}
 }
 .Landing-logo{
-
+	margin-top: 20px;
 }
 .Landing-preparetext{
 	margin-top: 20px;
@@ -241,7 +245,7 @@ span.Landing-csstudent{
 	visibility: hidden;
 }
 .web-color{
-	color: #367AEF !important;
+	color: #5AFEED !important;
 }
 .mobile-color {
 	color: greenyellow !important;
@@ -250,13 +254,13 @@ span.Landing-csstudent{
 	color: rgb(251, 255, 0) !important;
 }
 .system-color{
-	color: #E7494E !important;
+	color: rgb(255, 42, 42) !important;
 }
 .blockchain-color{
 	color: rgb(250, 149, 34) !important;
 }
 .other-color{
-	color: rgb(140, 0, 255) !important;
+	color: rgb(195, 0, 255) !important;
 }
 .ywc-blue-color{
 	color: #5AFEED;

@@ -7,11 +7,11 @@ import { Element } from 'react-scroll'
 class Landing extends Component {
   render() {
     return (
-      <Element className="mgt-global-20" name="scroll-time">      
+      <Element name="scroll-time">      
         <div className="Landing" data-aos="fade-up">
           <div className="Landing-head">
             <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="180px" className="Landing-logo"/>
-            <h1>KMUTNB CSDAY 2018</h1>
+            <h1 className="Landing-title">KMUTNB CSDAY 2018</h1>
             <h1 className="Landing-preparetext">เตรียมพบกับ!! งานประกวดเทคโนโลยีสุดยิ่งใหญ่</h1>
             <h2 className="inline">ของ<span className="Landing-csstudent">นักศึกษาภาควิชาคอมพิวเตอร์</span></h2>
             <h2 className="inline">&nbsp;มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
@@ -25,7 +25,7 @@ class Landing extends Component {
               ลงทะเบียนเข้าร่วมงาน
             </Button>
             <br />
-            <span className="Landing-register-text">สำหรับหน่วยงานหรือบริษัทที่สนใจเข้าเยี่ยมชม</span>
+            <span className="Landing-register-text">สำหรับบุคคลภายนอกมหาวิทยาลัยที่สนใจเข้าเยี่ยมชม</span>
           </div>
         </div>
       </Element>

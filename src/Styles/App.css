@@ -1,7 +1,11 @@
 .App {
   text-align: center;
-  max-width: 900px;
+  width: 900px;
+  max-width: 100vw;
   margin: auto;
+}
+.App *{
+  font-weight: 300;
 }
 .mgt-global-20 {
   padding-top: 8vh;
