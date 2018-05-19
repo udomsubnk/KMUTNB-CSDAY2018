@@ -13,11 +13,13 @@ import StarfieldCanvas from './StarfieldCanvas';
 
 class App extends Component {
   componentDidMount() {
-    AOS.init({duration: 1200})
+    AOS.init({duration: 1000, easing: 'ease-in-out-quart'})
   }
   render() {
     return (
-      <div style={{overflow:"hidden"}}>
+      <div style={{
+        overflow: "hidden"
+      }}>
         <StarfieldCanvas/>
         <Navbar/>
         <Element name="scroll-landing">
@@ -31,12 +33,12 @@ class App extends Component {
               <br />-Detail : WHAT IS BARCAMP?, PARTICIPANTS, REASONS TO COME
               <br />-Location : map ชี้มามหาลัย, ตัวหนังสือบอกสถานที่,ที่จอดรถ
             </div> */}
-            <Landing />
-            <Detail />
-            <DateAndTime />
-            <Location />
-            <Contact />
-            <Footer />
+            <Landing/>
+            <Detail/>
+            <DateAndTime/>
+            <Location/>
+            <Contact/>
+            <Footer/>
           </div>
         </Element>
       </div>
