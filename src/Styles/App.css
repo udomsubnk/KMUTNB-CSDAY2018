@@ -3,6 +3,7 @@
   width: 900px;
   max-width: 100vw;
   margin: auto;
+  padding: 10px;
 }
 .App *{
   font-weight: 300;
