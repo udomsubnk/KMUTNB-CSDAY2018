@@ -1,5 +1,4 @@
 import { slide as HambergerMenu } from 'react-burger-menu'
-import { Link } from 'react-scroll'
 import { NavMenu } from './NavMenu'
 
 import React from 'react'

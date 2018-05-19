@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../Styles/Navbar.css';
-import { Link } from 'react-scroll'
 import { NavMenu } from './NavMenu'
 import HambergerNav from './HambergerNav'
 
