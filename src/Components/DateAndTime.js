@@ -10,15 +10,13 @@ export default class DateAndTime extends Component {
           <div className="left-side">
             <h1>DATE & TIME</h1>
             <h2 data-aos="fade-right">28 MAY 2018</h2>
-            <h2 data-aos="fade-right">0:00 - 12:00</h2>
+            <h2 data-aos="fade-right">10:00 - 16:00</h2>
           </div>
           <div className="right-side">
             <h1>PLACE</h1>
-            <h2 data-aos="fade-left">APPLIED SCIENCE BUILDING (75)</h2>
-            <h2 data-aos="fade-left">KING MONGKUT'S UNIVERSITY
-              <br/>OF TECHNOLOGY
-              NORTH BANGKOK</h2>
-              {/* <h2>KMUTNB</h2> */}
+            <h2 data-aos="fade-left">คณะวิทยาศาสตร์ประยุกต์ (78)</h2>
+            <h2 data-aos="fade-left">มหาวิทยาลัยเทคโนโลยี
+              <br/>พระจอมเกล้าพระนครเหนือ</h2>
           </div>
         </div>
         <Activities/>

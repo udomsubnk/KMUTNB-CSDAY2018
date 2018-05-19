@@ -62,7 +62,7 @@
 	}
 }
 .Landing-logo{
-	margin-top: 30px;
+
 }
 .Landing-preparetext{
 	margin-top: 20px;
@@ -241,22 +241,22 @@ span.Landing-csstudent{
 	visibility: hidden;
 }
 .web-color{
-	color: #367AEF !important;
+	color: #5AFEED !important;
 }
 .mobile-color {
-	color: rgb(43, 255, 0) !important;
+	color: greenyellow !important;
 }
 .ml-color{
 	color: rgb(251, 255, 0) !important;
 }
 .system-color{
-	color: #E7494E !important;
+	color: rgb(255, 42, 42) !important;
 }
 .blockchain-color{
 	color: rgb(250, 149, 34) !important;
 }
 .other-color{
-	color: rgb(140, 0, 255) !important;
+	color: rgb(195, 0, 255) !important;
 }
 .ywc-blue-color{
 	color: #5AFEED;

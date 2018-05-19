@@ -9,7 +9,7 @@ class Location extends Component {
   render() {
     return (
       <Element className="mgt-global-20" name="scroll-location">
-        <div className="Location">
+        <div className="Location" data-aos="fade-up">
           <div className="map-location halfnaja">
             <div className="map-google">
               <Map/>
@@ -17,9 +17,10 @@ class Location extends Component {
           </div>
           <div className="content-location halfnaja">
             <div className="content-location-header mgl40">Location</div>
-            <div className="content-location-body mgl40">Department of Computer Science</div>
-            <div className="content-location-body mgl40">Faculty of Applied Science</div>
-            <div className="content-location-footer mgl40">ที่จอดรถฟรี !!</div>
+            <div className="content-location-body mgl40">ภาควิชาวิทยาการคอมพิวเตอร์</div>
+            <div className="content-location-body mgl40">คณะวิทยาศาสตร์ประยุกต์(78)</div>
+            <div className="content-location-body mgl40">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</div>
+            <div className="content-location-footer mgl40">สามารถจอดรถในมหาวิทยาลัยได้</div>
           </div>        
         </div>
       </Element>
