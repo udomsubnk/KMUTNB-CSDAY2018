@@ -85,7 +85,7 @@ export default class Table extends React.Component {
   render() {
     const { selectBtn, projectsByType, isMobile} = this.state
     return (
-      <Element name="scroll-time" className="mgt-global-20" className="Table">
+      <Element name="scroll-table" className="mgt-global-20" className="Table">
         <h1 data-aos="fade-up">รายชื่อโครงงานที่เข้าร่วมประกวดแข่งขัน</h1>
         <div className="container-table" data-aos="fade-up">
           <div className="type-table">
