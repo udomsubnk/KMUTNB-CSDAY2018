@@ -15,20 +15,26 @@ export default class Table extends React.Component {
   componentDidMount() {
     const projects = this.changeData(data)
     window.addEventListener('resize', this.toMobile)
-    this.toMobile()
+    let statusMobile = this.checkMobile()
     this.setState({ 
       projects, 
       projectsByType: projects,
-      selectBtn: -1
+      selectBtn: -1,
+      isMobile: statusMobile
     })
   }
 
-  toMobile = () => {
+  checkMobile = () => {
     if(window.innerWidth < 764) {
-      this.setState({ isMobile: true})
+      return true
     }else {
-      this.setState({ isMobile: false})
+      return false
     }
+  }
+
+  toMobile = () => {
+    const statusMobile = this.checkMobile()
+    this.setState({ isMobile: statusMobile})
   }
 
   changeData = (datas) => {
@@ -37,7 +43,6 @@ export default class Table extends React.Component {
     datas.map((data,index) => {
       if(data.name) 
         if(arrType.indexOf(data.type) === -1) {
-          console.log('xxx')
           newData.push({
             id: index,
             name: data.name, 
