@@ -114,7 +114,9 @@ export default class Table extends React.Component {
           </div>
           <div className="main-table" data-aos="fade-left">
             <div className="wrap-table">
-              <h2 data-aos="fade-down">ชื่อโครงงาน</h2>
+              <div className="kronkasj">
+                <h2 data-aos="fade-down" className="kronkasj">ชื่อโครงงาน</h2>
+              </div>
               <div id='table' className="project-table">
                 { projectsByType.map((project) => (
                     <div key={project.id} className="project-list">
@@ -137,6 +139,7 @@ const BtnType = styled.div`
   border: 2px solid #5AFEED;
   cursor: pointer;
   border-radius: 15px;
+  margin-top: 13px;
   color: ${props => props.backgroudColor ? 'black' : 'white;'};
   line-height: 50px;
   ${props => props.backgroudColor ? 'animation : type 0.7s ease infinite;' : ''};
