@@ -3,7 +3,7 @@
     margin-top: 20px;
 }
 .Detail * {
-    word-break: break-all;
+    word-break: normal;
 }
 .Detail-textalign-left{
     text-align: left !important;
@@ -19,4 +19,8 @@
     line-height: 200%;
     margin-top: 30px;
     color: #d0d0d0;
+}
+.Detail-technology{
+    margin-left: 4vh;
+    margin-right: 4vh;
 }

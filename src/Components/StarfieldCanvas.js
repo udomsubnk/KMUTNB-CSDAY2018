@@ -29,7 +29,8 @@ class StarfieldCanvas extends Component {
 					right: 0,
 					width: '100%',
 					height: '100%',
-					objectFit: 'cover'
+					objectFit: 'cover',
+					opacity: 0.8
 				}}
 			/>
 		);
