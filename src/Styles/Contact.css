@@ -1,6 +1,6 @@
 .Contact{
-    height: 300px;
     color: red;
+    margin-top: 7vh;
 }
 .Contact h2{
     font-weight: 600;
@@ -9,6 +9,15 @@
 .Contact h4{
     color: #d0d0d0;
     line-height: 150%;
+}
+.Contact span{
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.Contact a span:hover{
+    text-decoration: none;
 }
 .Contact a{
     color: #d0d0d0;
