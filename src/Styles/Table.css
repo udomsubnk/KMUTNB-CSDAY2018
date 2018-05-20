@@ -53,18 +53,14 @@
 
 @media (max-width: 1100px) {
   .container-table {
-    display: grid;
     grid-template-columns: 30% 70%; 
     grid-gap: 25px;
-    align-items: center; 
   }
 }
 
 @media (max-width: 930px) {
   .container-table {
-    display: grid;
     grid-template-columns: 30% 70%;
-    align-items: center; 
   }
   .type-table {
     grid-column: 1/2;
@@ -76,10 +72,8 @@
 
 @media (max-width: 764px) {
   .container-table {
-    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 30% 70%;
-    /* align-items: center;  */
   }
   .type-table {
     grid-row: 1/2;
