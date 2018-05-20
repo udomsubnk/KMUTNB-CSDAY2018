@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Styles/Navbar.css';
-import { NavMenu } from './NavMenu'
+import { NavItem } from './NavItem'
 import HambergerNav from './HambergerNav'
 
 class Navbar extends Component {
@@ -26,27 +26,27 @@ class Navbar extends Component {
     return (
     <div id='nav-bar' className="nav">
       <div className="nav-menu">
-        <NavMenu name='landing'>
+        <NavItem name='landing'>
           <p className="nav-text">landing</p>
-        </NavMenu>
-        <NavMenu name='date'>
+        </NavItem>
+        <NavItem name='date'>
           <p className="nav-text">date & time</p>
-        </NavMenu>
-        <NavMenu name='landing'>
+        </NavItem>
+        <NavItem name='landing'>
           <div className="nav-logo">
               <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" />
           </div>
-        </NavMenu>
-        <NavMenu name='detail'>
+        </NavItem>
+        <NavItem name='detail'>
           <p className="nav-text">detail</p>
-        </NavMenu>
-        <NavMenu name='location'>
+        </NavItem>
+        <NavItem name='location'>
           <p className="nav-text">location</p>
-        </NavMenu>
+        </NavItem>
         
-        {/* <NavMenu name='table'>
+        {/* <NavItem name='table'>
           <p className="nav-text">table</p>
-        </NavMenu> */}
+        </NavItem> */}
       </div>
       <div className="hamberger">
         <HambergerNav/>
