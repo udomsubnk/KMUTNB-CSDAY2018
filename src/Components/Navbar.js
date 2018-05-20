@@ -15,7 +15,7 @@ class Navbar extends Component {
   }
 
   onScroll = () => {
-    if(window.scrollY < 200) {
+    if(window.scrollY < 80) {
       document.getElementById('nav-bar').style.display = 'none'
     }else {
       document.getElementById('nav-bar').style.display = ''
@@ -43,6 +43,10 @@ class Navbar extends Component {
         <NavMenu name='location'>
           <p className="nav-text">location</p>
         </NavMenu>
+        
+        {/* <NavMenu name='table'>
+          <p className="nav-text">table</p>
+        </NavMenu> */}
       </div>
       <div className="hamberger">
         <HambergerNav/>

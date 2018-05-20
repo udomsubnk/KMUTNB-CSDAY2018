@@ -1,3 +1,8 @@
+.Table h1{
+  color: #5AFEED;
+  margin-top: 12vh;
+  margin-bottom: 5vh;
+}
 .container-table {
   display: grid;
   grid-template-columns: 30% 70%; 
@@ -6,9 +11,6 @@
 }
 .container-table h2{
   color: #5AFEED;
-}
-.container-table .wrap-table h2{
-  margin-top: -14px;
 }
 .container-table p{
   margin-top: 10px !important;
@@ -36,7 +38,7 @@
   border-radius: 15px;
 }
 .wrap-table {
-  height: 500px;
+  height: 470px;
 }
 .project-table {
   display: grid;
@@ -46,6 +48,7 @@
   border: 2px dashed #5AFEED; 
   border-radius: 10px;
   overflow-y: auto;
+  margin-top: 15px;
 }
 ::-webkit-scrollbar {
     width: 7px;

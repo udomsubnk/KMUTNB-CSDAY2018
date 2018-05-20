@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../Utils/Projects.json'
 import styled from 'styled-components'
+import { Element } from 'react-scroll'
 import '../Styles/Table.css'
 
 export default class Table extends React.Component {
@@ -8,39 +9,54 @@ export default class Table extends React.Component {
     projects: [],
     projectsByType: [],
     selectBtn: -1,
-    mobile: false
+    isMobile: false
   }
 
   componentDidMount() {
     const projects = this.changeData(data)
     window.addEventListener('resize', this.toMobile)
-    this.toMobile()
+    let statusMobile = this.checkMobile()
     this.setState({ 
       projects, 
       projectsByType: projects,
-      selectBtn: -1
+      selectBtn: -1,
+      isMobile: statusMobile
     })
   }
 
-  toMobile = () => {
+  checkMobile = () => {
     if(window.innerWidth < 764) {
-      this.setState({ mobile: true})
+      return true
     }else {
-      this.setState({ mobile: false})
+      return false
     }
   }
 
+  toMobile = () => {
+    const statusMobile = this.checkMobile()
+    this.setState({ isMobile: statusMobile})
+  }
+
   changeData = (datas) => {
-    const arrType = ['Web Apllication', 'ML & Data analytics', 'System(ระบบเบื้องหลัง)', 'Blockchain', 'Network & Security', 'Mobile Application', 'IOT']
+    const arrType = ['Web Apllication', 'ML & Data analytics', 'System(ระบบเบื้องหลัง)', 'Blockchain', 'Mobile Application', 'Other']
     let newData = []
     datas.map((data,index) => {
       if(data.name) 
-        newData.push({
-          id: index,
-          name: data.name, 
-          type: data.type,
-          typeId: arrType.indexOf(data.type)
-        })
+        if(arrType.indexOf(data.type) === -1) {
+          newData.push({
+            id: index,
+            name: data.name, 
+            type: 'Other',
+            typeId: 5
+          })
+        }else {
+          newData.push({
+            id: index,
+            name: data.name, 
+            type: data.type,
+            typeId: arrType.indexOf(data.type)
+          })
+        }
     })
     return newData
   }
@@ -67,49 +83,50 @@ export default class Table extends React.Component {
   }
 
   render() {
-    const { selectBtn, projectsByType, mobile} = this.state
+    const { selectBtn, projectsByType, isMobile} = this.state
     return (
-      <div className="container-table mgt-global-20">
-        <div className="type-table">
-          { mobile ?
-            <select className="type-menu-mobile" onChange={(e) => this.onSelectType(parseInt(e.target.value))}>
-              <option value={-1} onSelect={(e) => console.log(e)}>All</option>
-              <option value={0}>Web Apllication</option>
-              <option value={1}>ML & Data analytics</option>
-              <option value={2}>System</option>
-              <option value={3}>Blockchain</option>
-              <option value={4}>Network & Security</option>
-              <option value={5}>Mobile Application</option>
-              <option value={6}>IOT</option>
-            </select>
-          :
-            <div className="type-menu">
-              <h2>หมวดหมู่</h2>
-              <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType(-1)} >All</BtnType>
-              <BtnType backgroudColor={selectBtn === 0}  onClick={() => this.onSelectType(0)} >Web Apllication</BtnType>
-              <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
-              <BtnType backgroudColor={selectBtn === 2}  onClick={() => this.onSelectType(2)} >System</BtnType>
-              <BtnType backgroudColor={selectBtn === 3}  onClick={() => this.onSelectType(3)} >Blockchain</BtnType>
-              <BtnType backgroudColor={selectBtn === 4}  onClick={() => this.onSelectType(4)} >Network & Security</BtnType>
-              <BtnType backgroudColor={selectBtn === 5}  onClick={() => this.onSelectType(5)} >Mobile Application</BtnType>
-              <BtnType backgroudColor={selectBtn === 6} onClick={() => this.onSelectType(6)} >IOT</BtnType>
-            </div>
-          }
-        </div>
-        <div className="main-table">
-          <div className="wrap-table">
-            <h2>ชื่อโครงงาน</h2>
-            <div id='table' className="project-table">
-              { projectsByType.map((project) => (
-                  <div key={project.id} className="project-list">
-                    <p className="mgt10">{project.name}</p>
-                  </div>
-                ))
-              }
+      <Element name="scroll-time" className="mgt-global-20" className="Table">
+        <h1 data-aos="fade-up">รายชื่อโครงงานที่เข้าร่วมประกวดแข่งขัน</h1>
+        <div className="container-table" data-aos="fade-up">
+          <div className="type-table">
+            { isMobile ?
+              <select className="type-menu-mobile" onChange={(e) => this.onSelectType(parseInt(e.target.value))}>
+                <option value={-1} onSelect={(e) => console.log(e)}>All</option>
+                <option value={0}>Web Apllication</option>
+                <option value={1}>ML & Data analytics</option>
+                <option value={2}>System</option>
+                <option value={3}>Blockchain</option>
+                <option value={4}>Mobile Application</option>
+                <option value={5}>Other</option>
+              </select>
+            :
+              <div className="type-menu" data-aos="fade-right">
+                <h2 data-aos="fade-down">หมวดหมู่</h2>
+                <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType(-1)} >All</BtnType>
+                <BtnType backgroudColor={selectBtn === 0}  onClick={() => this.onSelectType(0)} >Web Apllication</BtnType>
+                <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
+                <BtnType backgroudColor={selectBtn === 2}  onClick={() => this.onSelectType(2)} >System</BtnType>
+                <BtnType backgroudColor={selectBtn === 3}  onClick={() => this.onSelectType(3)} >Blockchain</BtnType>
+                <BtnType backgroudColor={selectBtn === 4}  onClick={() => this.onSelectType(4)} >Mobile Application</BtnType>
+                <BtnType backgroudColor={selectBtn === 5} onClick={() => this.onSelectType(5)} >Other</BtnType>
+              </div>
+            }
+          </div>
+          <div className="main-table" data-aos="fade-left">
+            <div className="wrap-table">
+              <h2 data-aos="fade-down">ชื่อโครงงาน</h2>
+              <div id='table' className="project-table">
+                { projectsByType.map((project) => (
+                    <div key={project.id} className="project-list">
+                      <p className="mgt10">{project.name}</p>
+                    </div>
+                  ))
+                }
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Element>
     )
   }
 }
