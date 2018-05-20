@@ -1,12 +1,7 @@
 body {
   margin: 0;
   background-color: #222 !important;
-  /* background-image: url("/star.gif");   */
-  padding: 0 10px;
 }
 * {
   font-family: 'Prompt', sans-serif !important;
-}
-.white{
-  background-color: #fff;
 }
