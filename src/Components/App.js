@@ -7,6 +7,7 @@ import Detail from './Detail.js'
 import Location from './Location.js'
 import Contact from './Contact.js'
 import Footer from './Footer.js'
+import Activities from './Activities';
 import AOS from 'aos';
 import {Element} from 'react-scroll'
 import StarfieldCanvas from './StarfieldCanvas';
@@ -31,8 +32,9 @@ class App extends Component {
               <br />-Location : map ชี้มามหาลัย, ตัวหนังสือบอกสถานที่,ที่จอดรถ
             </div> */}
           <Landing/>
-          <Detail/>
           <DateAndTime/>
+          <Detail/>
+          <Activities />
           <Location/>
           <Contact/>
           <Footer/>

@@ -10,13 +10,13 @@ export default class TimeTable extends Component {
         activity: "Start Registration & Voting"
       }, {
         time: "13:30 - 14:00",
-        activity: "1st Session"
+        activity: "1st Session : วงการอุตสาหกรรมด้านเทคโนโลยีในปัจจุบัน"
       }, {
         time: "14:00 - 14:30",
-        activity: "2nd Session"
+        activity: "2nd Session : ความคาดหวังต่อนักศึกษาที่เข้ารับการศึกษาในภาควิชา"
       }, {
         time: "14:30 - 15:00",
-        activity: "3rd Session"
+        activity: "3rd Session : ประสบการณ์การฝึกงานสนุกๆที่ต่างประเทศ"
       }, {
         time: "16:00",
         activity: "Close Voting"

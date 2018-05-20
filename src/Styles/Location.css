@@ -1,6 +1,7 @@
 .Location {
 	width: 100%;
-	color: yellow;
+    color: yellow;
+    margin-top: 6vh;
 }
 
 .map-location {

@@ -23,7 +23,7 @@ class Landing extends Component {
             <h2 className="inline">&nbsp;มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
           </div>
           <div id="parallax">
-            <div data-depth="0.3">
+            <div data-depth="0.2">
               <Carousel />
             </div>
           </div>

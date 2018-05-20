@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Element} from 'react-scroll'
 import '../Styles/DateAndTime.css';
-import Activities from './Activities';
+
 export default class DateAndTime extends Component {
   render() {
     return (
@@ -19,7 +19,6 @@ export default class DateAndTime extends Component {
               <br/>พระจอมเกล้าพระนครเหนือ</h2>
           </div>
         </div>
-        <Activities/>
       </Element>
     )
   }

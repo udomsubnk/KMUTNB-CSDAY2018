@@ -58,13 +58,13 @@ export default class HambergerNav extends React.Component {
       <HambergerMenu width="250px" isOpen={this.state.isOpen} styles={styles}>
         <div className='hamberger'>
           <NavMenu name='landing'>
-            <p onClick={this.closeHamberger}>landing</p>
+            <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" onClick={this.closeHamberger}/>
+          </NavMenu>
+          <NavMenu name='date'>
+            <p onClick={this.closeHamberger}>date & Time</p>
           </NavMenu>
           <NavMenu name='detail'>
             <p onClick={this.closeHamberger}>detail</p>
-          </NavMenu>
-          <NavMenu name='date'>
-            <p onClick={this.closeHamberger}>date</p>
           </NavMenu>
           <NavMenu name='location'>
             <p onClick={this.closeHamberger}>location</p>
