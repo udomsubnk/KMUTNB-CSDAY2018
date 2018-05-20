@@ -14,6 +14,7 @@ export default class Table extends React.Component {
   componentDidMount() {
     const projects = this.changeData(data)
     window.addEventListener('resize', this.toMobile)
+    this.toMobile()
     this.setState({ 
       projects, 
       projectsByType: projects,
@@ -49,7 +50,7 @@ export default class Table extends React.Component {
   }
 
   onSelectType = (type) => {
-    if(type === 'all') {
+    if(type === -1) {
       this.onScrollTop()
       this.setState({ 
         projectsByType: this.state.projects,
@@ -71,16 +72,20 @@ export default class Table extends React.Component {
       <div className="container-table mgt-global-20">
         <div className="type-table">
           { mobile ?
-            <select>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
+            <select className="type-menu2" onChange={(e) => this.onSelectType(parseInt(e.target.value))}>
+              <option value={-1} onSelect={(e) => console.log(e)}>All</option>
+              <option value={0}>Web Apllication</option>
+              <option value={1}>ML & Data analytics</option>
+              <option value={2}>System</option>
+              <option value={3}>System</option>
+              <option value={4}>Blockchain</option>
+              <option value={5}>Network & Security</option>
+              <option value={6}>IOT</option>
             </select>
           :
             <div className="type-menu">
               <h4>Type</h4>
-              <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType('all')} >All</BtnType>
+              <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType(-1)} >All</BtnType>
               <BtnType backgroudColor={selectBtn === 0}  onClick={() => this.onSelectType(0)} >Web Apllication</BtnType>
               <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
               <BtnType backgroudColor={selectBtn === 2}  onClick={() => this.onSelectType(2)} >System</BtnType>
