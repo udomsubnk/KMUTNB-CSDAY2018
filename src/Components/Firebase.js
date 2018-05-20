@@ -39,5 +39,4 @@ export const countRegisterClick = function(){
             registerclick: registerclick + 1
         });
     })
-    return true;
 }
