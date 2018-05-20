@@ -4,6 +4,7 @@ import { Button } from 'reactstrap';
 import Carousel from './Carousel.js'
 import { Element } from 'react-scroll'
 import Parallax from 'parallax-js';
+import { countRegisterClick } from './Firebase';
 
 class Landing extends Component {
   componentDidMount() {
@@ -29,12 +30,14 @@ class Landing extends Component {
             </div>
           </div>
           <div className="Landing-calltoaction">
-            <Button outline color="primary" size="lg" className="Landing-register"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd1MoDN5sd6t0pDZRE85aePMoUm4aTjKObXAUP6EohqAqsKKw/viewform"
-              target="_blank"
-            >
-              ลงทะเบียนเข้าร่วมงาน
-            </Button>
+            <div onClick={ countRegisterClick }>
+              <Button outline color="primary" size="lg" className="Landing-register"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd1MoDN5sd6t0pDZRE85aePMoUm4aTjKObXAUP6EohqAqsKKw/viewform"
+                target="_blank"
+                >
+                ลงทะเบียนเข้าร่วมงาน
+              </Button>
+            </div>
             <br />
             <span className="Landing-register-text">สำหรับบุคคลภายนอกมหาวิทยาลัยที่สนใจเข้าเยี่ยมชม</span>
           </div>

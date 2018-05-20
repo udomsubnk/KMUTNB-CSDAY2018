@@ -1,3 +1,5 @@
+import * as firebase from 'firebase';
+
 var config = {
     apiKey: "AIzaSyCsJCtlT5W-zO1yZSM3P1w00BX6ykfCpHA",
     authDomain: "csday2018.firebaseapp.com",
@@ -7,3 +9,36 @@ var config = {
     messagingSenderId: "542265127372"
 };
 firebase.initializeApp(config);
+
+const getView = function(){
+    return new Promise((resolve, reject) => {
+        firebase.database().ref('/count/pageview').once('value').then(function (snapshot) {
+            var view = (snapshot.val());
+            resolve(view)
+        });
+    });
+}
+const countView = function(){
+    getView().then((view)=>{
+        firebase.database().ref('/count').update({
+            pageview : view + 1
+        });
+    })
+}
+const getRegisterClick = function(){
+    return new Promise((resolve, reject) => {
+        firebase.database().ref('/count/registerclick').once('value').then(function (snapshot) {
+            var registerclick = (snapshot.val());
+            resolve(registerclick)
+        });
+    });
+}
+export const countRegisterClick = function(){
+    getRegisterClick().then((registerclick)=>{
+        firebase.database().ref('/count').update({
+            registerclick: registerclick + 1
+        });
+    })
+    return true;
+}
+countView();

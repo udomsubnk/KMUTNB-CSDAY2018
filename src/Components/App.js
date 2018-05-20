@@ -11,7 +11,7 @@ import Activities from './Activities';
 import AOS from 'aos';
 import {Element} from 'react-scroll'
 import StarfieldCanvas from './StarfieldCanvas';
-import Table from './Table'
+import Table from './Table';
 
 class App extends Component {
   componentDidMount() {
