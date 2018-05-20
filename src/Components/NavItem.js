@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 
-export const NavMenu = (props) => {
+export const NavItem = (props) => {
   return (
     <Link 
       activeClass="active"

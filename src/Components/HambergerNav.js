@@ -1,5 +1,5 @@
 import { slide as HambergerMenu } from 'react-burger-menu'
-import { NavMenu } from './NavMenu'
+import { NavItem } from './NavItem'
 
 import React from 'react'
 
@@ -57,18 +57,18 @@ export default class HambergerNav extends React.Component {
     return(
       <HambergerMenu width="250px" isOpen={this.state.isOpen} styles={styles}>
         <div className='hamberger'>
-          <NavMenu name='landing'>
+          <NavItem name='landing'>
             <img src="/logo.png" alt="KMUTNB CSDAY 2018" width="80px" onClick={this.closeHamberger}/>
-          </NavMenu>
-          <NavMenu name='date'>
+          </NavItem>
+          <NavItem name='date'>
             <p onClick={this.closeHamberger}>date & Time</p>
-          </NavMenu>
-          <NavMenu name='detail'>
+          </NavItem>
+          <NavItem name='detail'>
             <p onClick={this.closeHamberger}>detail</p>
-          </NavMenu>
-          <NavMenu name='location'>
+          </NavItem>
+          <NavItem name='location'>
             <p onClick={this.closeHamberger}>location</p>
-          </NavMenu>
+          </NavItem>
         </div>
       </HambergerMenu>
     )
