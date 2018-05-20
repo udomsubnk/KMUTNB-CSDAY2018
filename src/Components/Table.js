@@ -24,6 +24,10 @@ export default class Table extends React.Component {
     })
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.toMobile)
+  }
+
   checkMobile = () => {
     if(window.innerWidth < 764) {
       return true
@@ -40,7 +44,7 @@ export default class Table extends React.Component {
   changeData = (datas) => {
     const arrType = ['Web Apllication', 'ML & Data analytics', 'System(ระบบเบื้องหลัง)', 'Blockchain', 'Mobile Application', 'Other']
     let newData = []
-    datas.map((data,index) => {
+    datas.map((data, index) => {
       if(data.name) {
         const typeId = (arrType.indexOf(data.type) === -1) ? 5 : arrType.indexOf(data.type)
         newData.push({
@@ -79,7 +83,7 @@ export default class Table extends React.Component {
   render() {
     const { selectBtn, projectsByType, isMobile} = this.state
     return (
-      <Element name="scroll-table" className="mgt-global-20" className="Table">
+      <Element name="scroll-table" className="Table mgt-global-20">
         <h1 data-aos="fade-up">รายชื่อโครงงานที่เข้าร่วมประกวดแข่งขัน</h1>
         <div className="container-table" data-aos="fade-up">
           <div className="type-table">
@@ -137,14 +141,4 @@ const BtnType = styled.div`
   color: ${props => props.backgroudColor ? 'black' : 'white;'};
   line-height: 50px;
   ${props => props.backgroudColor ? 'animation : type 0.7s ease infinite;' : ''};
-`
-
-const DropdownType = styled.option`
-  background: ${props => props.backgroudColor ? '#5AFEED' : 'rgba(0, 0, 0, 0.7);'};
-  height: 50px;
-  border: 2px solid #5AFEED;
-  color: ${props => props.backgroudColor ? 'black' : 'white;'};
-  cursor: pointer;
-  border-radius: 15px;
-  line-height: 50px;
 `

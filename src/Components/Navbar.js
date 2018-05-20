@@ -43,10 +43,6 @@ class Navbar extends Component {
         <NavItem name='location'>
           <p className="nav-text">location</p>
         </NavItem>
-        
-        {/* <NavItem name='table'>
-          <p className="nav-text">table</p>
-        </NavItem> */}
       </div>
       <div className="hamberger">
         <HambergerNav/>
