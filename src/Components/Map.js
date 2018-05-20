@@ -9,7 +9,6 @@ const StyledMapWithAnInfoBox = compose(
     containerElement: <div style={{ height: `300px`, width:'400px' }} />,
     mapElement: <div style={{ height: `300px`, width: '400px' }} />,
     center: { lat: 13.821483, lng: 100.515324 },
-    // 13.821483, 100.515324
   }),
   withStateHandlers(() => ({
     isOpen: false,

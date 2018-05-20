@@ -1,18 +1,21 @@
 import React from 'react'
 import data from '../Utils/Projects.json'
+import styled from 'styled-components'
 import '../Styles/Table.css'
 
 export default class Table extends React.Component {
   state = {
     projects: [],
     projectsByType: [],
+    selectBtn: -1
   }
 
   componentDidMount() {
     const projects = this.changeData(data)
     this.setState({ 
       projects, 
-      projectsByType: projects 
+      projectsByType: projects,
+      selectBtn: -1
     })
   }
 
@@ -38,34 +41,41 @@ export default class Table extends React.Component {
   onSelectType = (type) => {
     if(type === 'all') {
       this.onScrollTop()
-      this.setState({ projectsByType: this.state.projects})
+      this.setState({ 
+        projectsByType: this.state.projects,
+        selectBtn: -1
+      })
     }else {
       this.onScrollTop()
       const selected = this.state.projects.filter((project) => project.typeId === type)
-      this.setState({ projectsByType: selected })
+      this.setState({ 
+        projectsByType: selected,
+        selectBtn: type
+      })
     }
   }
 
   render() {
+    const { selectBtn, projectsByType} = this.state
     return (
       <div className="container-table">
         <div className="type-table">
           <div className="type-menu">
             <h4>Type</h4>
-            <button type="button" onClick={() => this.onSelectType('all')} className="btn-type">All</button>
-            <button type="button" onClick={() => this.onSelectType(0)} className="btn-type">Web Apllication</button>
-            <button type="button" onClick={() => this.onSelectType(1)} className="btn-type">ML & Data analytics</button>
-            <button type="button" onClick={() => this.onSelectType(2)} className="btn-type">System</button>
-            <button type="button" onClick={() => this.onSelectType(3)} className="btn-type">Blockchain</button>
-            <button type="button" onClick={() => this.onSelectType(4)} className="btn-type">Network & Security</button>
-            <button type="button" onClick={() => this.onSelectType(5)} className="btn-type">Mobile Application</button>
-            <button type="button" onClick={() => this.onSelectType(6)} className="btn-type">IOT</button>
+            <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType('all')} >All</BtnType>
+            <BtnType backgroudColor={selectBtn === 0}  onClick={() => this.onSelectType(0)} >Web Apllication</BtnType>
+            <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
+            <BtnType backgroudColor={selectBtn === 2}  onClick={() => this.onSelectType(2)} >System</BtnType>
+            <BtnType backgroudColor={selectBtn === 3}  onClick={() => this.onSelectType(3)} >Blockchain</BtnType>
+            <BtnType backgroudColor={selectBtn === 4}  onClick={() => this.onSelectType(4)} >Network & Security</BtnType>
+            <BtnType backgroudColor={selectBtn === 5}  onClick={() => this.onSelectType(5)} >Mobile Application</BtnType>
+            <BtnType backgroudColor={selectBtn === 6} onClick={() => this.onSelectType(6)} >IOT</BtnType>
           </div>
         </div>
         <div className="main-table">
           <div className="wrap-table">
             <div id='table' className="project-table">
-              { this.state.projectsByType.map((project) => (
+              { projectsByType.map((project) => (
                   <div key={project.id} className="project-list">
                     <p className="mgt10">{project.name}</p>
                   </div>
@@ -78,3 +88,12 @@ export default class Table extends React.Component {
     )
   }
 }
+
+const BtnType = styled.div`
+  background: ${props => props.backgroudColor ? 'red': 'rgb(8, 8, 8)'};
+  height: 50px;
+  border: 2px solid #FFF;
+  color:yellow;
+  cursor: pointer;
+  border-radius: 15px;
+`
