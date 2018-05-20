@@ -6,8 +6,8 @@ const StyledMapWithAnInfoBox = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `300px`, width: '400px' }} />,
-    containerElement: <div style={{ height: `300px`, width:'400px' }} />,
-    mapElement: <div style={{ height: `300px`, width: '400px' }} />,
+    containerElement: <div className="google-map-size" />,
+    mapElement: <div style={{ height: `300px`, width: '100%' }}  />,
     center: { lat: 13.821483, lng: 100.515324 },
     // 13.821483, 100.515324
   }),
