@@ -72,7 +72,7 @@ export default class Table extends React.Component {
       <div className="container-table mgt-global-20">
         <div className="type-table">
           { mobile ?
-            <select className="type-menu2" onChange={(e) => this.onSelectType(parseInt(e.target.value))}>
+            <select className="type-menu-mobile" onChange={(e) => this.onSelectType(parseInt(e.target.value))}>
               <option value={-1} onSelect={(e) => console.log(e)}>All</option>
               <option value={0}>Web Apllication</option>
               <option value={1}>ML & Data analytics</option>

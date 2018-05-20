@@ -16,11 +16,8 @@
   grid-gap: 10px; 
   padding-left: 20px;
 }
-.type-menu2 {
-  border-left: 2px solid #FFF;
-  display: grid;
-  grid-gap: 10px; 
-  padding-left: 20px;
+.type-menu-mobile {
+  width: 100%;
 }
 .btn-type {
   height: 50px;
@@ -90,7 +87,6 @@
   }
   .main-table {
     grid-row: 2/2;
-    width: 650px;
     grid-column: 1;
   }
 }
