@@ -90,7 +90,7 @@ export default class Table extends React.Component {
         <div className="container-table" data-aos="fade-up">
           <div className="type-table">
             { isMobile ?
-              <select className="type-menu-mobile" onChange={(e) => this.onSelectType(parseInt(e.target.value))}>
+              <select className="type-menu-mobile" onChange={(e) => this.onSelectType(parseInt(e.target.value))} data-aos="fade-right">
                 <option value={-1} onSelect={(e) => console.log(e)}>All</option>
                 <option value={0}>Web Apllication</option>
                 <option value={1}>ML & Data analytics</option>
@@ -139,7 +139,7 @@ const BtnType = styled.div`
   border-radius: 15px;
   color: ${props => props.backgroudColor ? 'black' : 'white;'};
   line-height: 50px;
-  ${props => props.backgroudColor ? 'animation type 0.7s ease infinite;' : ''};
+  ${props => props.backgroudColor ? 'animation : type 0.7s ease infinite;' : ''};
 `
 
 const DropdownType = styled.option`
