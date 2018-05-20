@@ -21,19 +21,19 @@ class Detail extends Component {
               <br />
               งานของเราเปิดกว้างสำหรับทุกคน ไม่ว่าคุณจะเป็นใคร เป็นนักเรียน เป็นนักศึกษา หรือว่าคุณกำลังทำงานอยู่
               หากคุณมีความชื่นชอบ มีใจรักในเทคโนโลยี ขอเชิญชวนมาร่วมเป็นส่วนหนึ่งของกิจกรรมครั้งยิ่งใหญ่ 
-              ชั้น 1,6 คณะวิทยาศาสตร์ประยุกต์(78) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เวลา 10:00 - 16:00 น.
+              ที่ชั้น 1,6 คณะวิทยาศาสตร์ประยุกต์(78) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เวลา 10:00 - 16:00 น.
             </p>  
           </div>
           <div className="Detail-mgtitem">
             <h1 data-aos="fade-up" className="ml-color">REASONS TO COME</h1>
             <p data-aos="fade-up" className="Detail-content">
               คุณจะได้พบกับ พบกับโครงงานและแรงบรรดาลใจใหม่ๆ เทคโนโลยีล้ำสมัยไม่ว่าจะเป็น
-              <br /><span className="Detail-technology">►</span>Blockchain Technology
-              <br /><span className="Detail-technology">►</span>Machine Learning & Data Analytics
-              <br /><span className="Detail-technology">►</span>Internet of Things
-              <br /><span className="Detail-technology">►</span>Web & Mobile Application
-              <br /><span className="Detail-technology">►</span>Network & Security
-              <br />และร่วมโหวตโครงงานที่ท่านชื่นชอบได้ภายในงาน เพื่อเป็นกำลังใจและสนับสนุนให้โครงงานของนักศึกษาเข้าสู่การประกวดรอบต่อไป
+              <br /><span><span className="Detail-technology">►</span>Blockchain Technology</span>
+              <br /><span><span className="Detail-technology">►</span>Machine Learning & Data Analytics</span>
+              <br /><span><span className="Detail-technology">►</span>Internet of Things</span>
+              <br /><span><span className="Detail-technology">►</span>Web & Mobile Application</span>
+              <br /><span><span className="Detail-technology">►</span>Network & Security</span>
+              <br /><span>และร่วมโหวตโครงงานที่ท่านชื่นชอบได้ภายในงาน เพื่อเป็นกำลังใจและสนับสนุนให้โครงงานของนักศึกษาเข้าสู่การประกวดรอบต่อไป</span>
               
             </p>  
           </div>
