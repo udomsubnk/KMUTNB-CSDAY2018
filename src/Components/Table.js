@@ -122,6 +122,7 @@ const BtnType = styled.div`
   border-radius: 15px;
   color: ${props => props.backgroudColor ? 'black' : 'white;'};
   line-height: 50px;
+  ${props => props.backgroudColor ? 'animation type 0.7s ease infinite;' : ''};
 `
 
 const DropdownType = styled.option`
