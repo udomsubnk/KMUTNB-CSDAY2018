@@ -7,16 +7,26 @@ export default class Table extends React.Component {
   state = {
     projects: [],
     projectsByType: [],
-    selectBtn: -1
+    selectBtn: -1,
+    mobile: false
   }
 
   componentDidMount() {
     const projects = this.changeData(data)
+    window.addEventListener('resize', this.toMobile)
     this.setState({ 
       projects, 
       projectsByType: projects,
       selectBtn: -1
     })
+  }
+
+  toMobile = () => {
+    if(window.innerWidth < 764) {
+      this.setState({ mobile: true})
+    }else {
+      this.setState({ mobile: false})
+    }
   }
 
   changeData = (datas) => {
@@ -56,21 +66,30 @@ export default class Table extends React.Component {
   }
 
   render() {
-    const { selectBtn, projectsByType} = this.state
+    const { selectBtn, projectsByType, mobile} = this.state
     return (
-      <div className="container-table">
+      <div className="container-table mgt-global-20">
         <div className="type-table">
-          <div className="type-menu">
-            <h4>Type</h4>
-            <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType('all')} >All</BtnType>
-            <BtnType backgroudColor={selectBtn === 0}  onClick={() => this.onSelectType(0)} >Web Apllication</BtnType>
-            <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
-            <BtnType backgroudColor={selectBtn === 2}  onClick={() => this.onSelectType(2)} >System</BtnType>
-            <BtnType backgroudColor={selectBtn === 3}  onClick={() => this.onSelectType(3)} >Blockchain</BtnType>
-            <BtnType backgroudColor={selectBtn === 4}  onClick={() => this.onSelectType(4)} >Network & Security</BtnType>
-            <BtnType backgroudColor={selectBtn === 5}  onClick={() => this.onSelectType(5)} >Mobile Application</BtnType>
-            <BtnType backgroudColor={selectBtn === 6} onClick={() => this.onSelectType(6)} >IOT</BtnType>
-          </div>
+          { mobile ?
+            <select>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+          :
+            <div className="type-menu">
+              <h4>Type</h4>
+              <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType('all')} >All</BtnType>
+              <BtnType backgroudColor={selectBtn === 0}  onClick={() => this.onSelectType(0)} >Web Apllication</BtnType>
+              <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
+              <BtnType backgroudColor={selectBtn === 2}  onClick={() => this.onSelectType(2)} >System</BtnType>
+              <BtnType backgroudColor={selectBtn === 3}  onClick={() => this.onSelectType(3)} >Blockchain</BtnType>
+              <BtnType backgroudColor={selectBtn === 4}  onClick={() => this.onSelectType(4)} >Network & Security</BtnType>
+              <BtnType backgroudColor={selectBtn === 5}  onClick={() => this.onSelectType(5)} >Mobile Application</BtnType>
+              <BtnType backgroudColor={selectBtn === 6} onClick={() => this.onSelectType(6)} >IOT</BtnType>
+            </div>
+          }
         </div>
         <div className="main-table">
           <div className="wrap-table">
@@ -90,6 +109,15 @@ export default class Table extends React.Component {
 }
 
 const BtnType = styled.div`
+  background: ${props => props.backgroudColor ? 'red': 'rgb(8, 8, 8)'};
+  height: 50px;
+  border: 2px solid #FFF;
+  color:yellow;
+  cursor: pointer;
+  border-radius: 15px;
+`
+
+const DropdownType = styled.option`
   background: ${props => props.backgroudColor ? 'red': 'rgb(8, 8, 8)'};
   height: 50px;
   border: 2px solid #FFF;

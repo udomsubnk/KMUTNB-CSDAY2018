@@ -10,6 +10,7 @@ import Footer from './Footer.js'
 import AOS from 'aos';
 import {Element} from 'react-scroll'
 import StarfieldCanvas from './StarfieldCanvas';
+import Table from './Table'
 
 class App extends Component {
   componentDidMount() {
@@ -34,6 +35,7 @@ class App extends Component {
             <Landing />
             <Detail />
             <DateAndTime />
+            <Table></Table>
             <Location />
             <Contact />
             <Footer />
