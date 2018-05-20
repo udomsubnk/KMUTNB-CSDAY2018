@@ -32,16 +32,26 @@ export default class Table extends React.Component {
   }
 
   changeData = (datas) => {
-    const arrType = ['Web Apllication', 'ML & Data analytics', 'System(ระบบเบื้องหลัง)', 'Blockchain', 'Network & Security', 'Mobile Application', 'IOT']
+    const arrType = ['Web Apllication', 'ML & Data analytics', 'System(ระบบเบื้องหลัง)', 'Blockchain', 'Mobile Application', 'Other']
     let newData = []
     datas.map((data,index) => {
       if(data.name) 
-        newData.push({
-          id: index,
-          name: data.name, 
-          type: data.type,
-          typeId: arrType.indexOf(data.type)
-        })
+        if(arrType.indexOf(data.type) === -1) {
+          console.log('xxx')
+          newData.push({
+            id: index,
+            name: data.name, 
+            type: 'Other',
+            typeId: 5
+          })
+        }else {
+          newData.push({
+            id: index,
+            name: data.name, 
+            type: data.type,
+            typeId: arrType.indexOf(data.type)
+          })
+        }
     })
     return newData
   }
@@ -79,10 +89,9 @@ export default class Table extends React.Component {
                 <option value={0}>Web Apllication</option>
                 <option value={1}>ML & Data analytics</option>
                 <option value={2}>System</option>
-                <option value={3}>System</option>
-                <option value={4}>Blockchain</option>
-                <option value={5}>Network & Security</option>
-                <option value={6}>IOT</option>
+                <option value={3}>Blockchain</option>
+                <option value={4}>Mobile Application</option>
+                <option value={5}>Other</option>
               </select>
             :
               <div className="type-menu">
@@ -91,9 +100,8 @@ export default class Table extends React.Component {
                 <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
                 <BtnType backgroudColor={selectBtn === 2}  onClick={() => this.onSelectType(2)} >System</BtnType>
                 <BtnType backgroudColor={selectBtn === 3}  onClick={() => this.onSelectType(3)} >Blockchain</BtnType>
-                <BtnType backgroudColor={selectBtn === 4}  onClick={() => this.onSelectType(4)} >Network & Security</BtnType>
-                <BtnType backgroudColor={selectBtn === 5}  onClick={() => this.onSelectType(5)} >Mobile Application</BtnType>
-                <BtnType backgroudColor={selectBtn === 6} onClick={() => this.onSelectType(6)} >IOT</BtnType>
+                <BtnType backgroudColor={selectBtn === 4}  onClick={() => this.onSelectType(4)} >Mobile Application</BtnType>
+                <BtnType backgroudColor={selectBtn === 5} onClick={() => this.onSelectType(5)} >Other</BtnType>
               </div>
             }
           </div>
