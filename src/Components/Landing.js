@@ -8,6 +8,7 @@ import Parallax from 'parallax-js';
 class Landing extends Component {
   componentDidMount() {
     var scene = document.getElementById('parallax');
+    // eslint-disable-next-line
     var parallaxInstance = new Parallax(scene);
   }
 

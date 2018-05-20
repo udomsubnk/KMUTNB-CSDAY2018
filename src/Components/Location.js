@@ -17,7 +17,7 @@ class Location extends Component {
 						<div className="content-location-body">ภาควิชาวิทยาการคอมพิวเตอร์</div>
 						<div className="content-location-body">คณะวิทยาศาสตร์ประยุกต์(78)</div>
 						<div className="content-location-body">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</div>
-						<div className="content-location-footer">สามารถจอดรถในมหาวิทยาลัยได้</div>
+						<div className="content-location-footer">สามารถนำรถยนต์เข้ามาจอดในมหาวิทยาลัยได้ฟรี</div>
 					</div>
 				</div>
 			</Element>
