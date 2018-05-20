@@ -33,7 +33,7 @@ class Detail extends Component {
               <br /><span className="Detail-technology">►</span>Internet of Things
               <br /><span className="Detail-technology">►</span>Web & Mobile Application
               <br /><span className="Detail-technology">►</span>Network & Security
-              <br />และร่วมโหวตโครงงานที่ท่านชื่นชอบได้ภายในงาน เพื่อเป็นกำลังใจและสนับสนุนให้โครงงานของนักศึกษาเข้าสู่รอบการประกวดต่อไป
+              <br />และร่วมโหวตโครงงานที่ท่านชื่นชอบได้ภายในงาน เพื่อเป็นกำลังใจและสนับสนุนให้โครงงานของนักศึกษาเข้าสู่การประกวดรอบต่อไป
               
             </p>  
           </div>
