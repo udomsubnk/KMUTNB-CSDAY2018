@@ -12,10 +12,12 @@ import AOS from 'aos';
 import {Element} from 'react-scroll'
 import StarfieldCanvas from './StarfieldCanvas';
 import Table from './Table';
+import { countView } from './Firebase.js';
 
 class App extends Component {
   componentDidMount() {
-    AOS.init({duration: 1000, easing: 'ease-in-out-quart'})
+    AOS.init({duration: 1000, easing: 'ease-in-out-quart'});
+    countView();
   }
   render() {
     return (

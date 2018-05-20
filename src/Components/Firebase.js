@@ -10,7 +10,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-const getView = function(){
+export const getView = function(){
     return new Promise((resolve, reject) => {
         firebase.database().ref('/count/pageview').once('value').then(function (snapshot) {
             var view = (snapshot.val());
@@ -18,14 +18,14 @@ const getView = function(){
         });
     });
 }
-const countView = function(){
+export const countView = function(){
     getView().then((view)=>{
         firebase.database().ref('/count').update({
             pageview : view + 1
         });
     })
 }
-const getRegisterClick = function(){
+export const getRegisterClick = function(){
     return new Promise((resolve, reject) => {
         firebase.database().ref('/count/registerclick').once('value').then(function (snapshot) {
             var registerclick = (snapshot.val());
@@ -41,4 +41,3 @@ export const countRegisterClick = function(){
     })
     return true;
 }
-countView();

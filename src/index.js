@@ -5,7 +5,6 @@ import App from './Components/App';
 import registerServiceWorker from './Utils/registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css';
-import './Components/Firebase.js';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
