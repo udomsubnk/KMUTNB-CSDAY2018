@@ -34,29 +34,22 @@ export default class Table extends React.Component {
 
   toMobile = () => {
     const statusMobile = this.checkMobile()
-    this.setState({ isMobile: statusMobile})
+    this.setState({ isMobile: statusMobile })
   }
 
   changeData = (datas) => {
     const arrType = ['Web Apllication', 'ML & Data analytics', 'System(ระบบเบื้องหลัง)', 'Blockchain', 'Mobile Application', 'Other']
     let newData = []
     datas.map((data,index) => {
-      if(data.name) 
-        if(arrType.indexOf(data.type) === -1) {
-          newData.push({
-            id: index,
-            name: data.name, 
-            type: 'Other',
-            typeId: 5
-          })
-        }else {
-          newData.push({
-            id: index,
-            name: data.name, 
-            type: data.type,
-            typeId: arrType.indexOf(data.type)
-          })
-        }
+      if(data.name) {
+        const typeId = (arrType.indexOf(data.type) === -1) ? 5 : arrType.indexOf(data.type)
+        newData.push({
+          id: index,
+          typeId,
+          name: data.name, 
+          type: arrType.indexOf(typeId)
+        })
+      }
     })
     return newData
   }
@@ -66,15 +59,16 @@ export default class Table extends React.Component {
   }
 
   onSelectType = (type) => {
+    const { projects } = this.state
     if(type === -1) {
       this.onScrollTop()
       this.setState({ 
-        projectsByType: this.state.projects,
+        projectsByType: projects,
         selectBtn: -1
       })
     }else {
       this.onScrollTop()
-      const selected = this.state.projects.filter((project) => project.typeId === type)
+      const selected = projects.filter((project) => project.typeId === type)
       this.setState({ 
         projectsByType: selected,
         selectBtn: type
@@ -90,8 +84,8 @@ export default class Table extends React.Component {
         <div className="container-table" data-aos="fade-up">
           <div className="type-table">
             { isMobile ?
-              <select className="type-menu-mobile" onChange={(e) => this.onSelectType(parseInt(e.target.value))} data-aos="fade-right">
-                <option value={-1} onSelect={(e) => console.log(e)}>All</option>
+              <select className="type-menu-mobile" onChange={(e) => this.onSelectType(e.target.value)} data-aos="fade-right">
+                <option value={-1}>All</option>
                 <option value={0}>Web Apllication</option>
                 <option value={1}>ML & Data analytics</option>
                 <option value={2}>System</option>
@@ -115,7 +109,7 @@ export default class Table extends React.Component {
           <div className="main-table" data-aos="fade-left">
             <div className="wrap-table">
               <div className="kronkasj">
-                <h2 data-aos="fade-down" className="kronkasj">ชื่อโครงงาน</h2>
+                <h2 data-aos="fade-down">ชื่อโครงงาน</h2>
               </div>
               <div id='table' className="project-table">
                 { projectsByType.map((project) => (
