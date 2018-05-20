@@ -2,3 +2,17 @@
     height: 300px;
     color: red;
 }
+.Contact h2{
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+.Contact h4{
+    color: #d0d0d0;
+    line-height: 150%;
+}
+.Contact a{
+    color: #d0d0d0;
+}
+.Contact a:hover{
+    color: #d0d0d0;
+}
