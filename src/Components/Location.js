@@ -9,7 +9,7 @@ class Location extends Component {
 		return (
 			<Element className="mgt-global-20" name="scroll-location">
 				<div className="Location  map-flexbox" data-aos="fade-up">
-					<div className="map-location halfnaja">
+					<div className="map-location halfnaja" data-aos="zoom-in-up">
 						<Map />
 					</div>
 					<div className="content-location halfnaja">

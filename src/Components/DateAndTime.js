@@ -13,7 +13,7 @@ export default class DateAndTime extends Component {
             <h2 data-aos="fade-right">10:00 - 16:00</h2>
           </div>
           <div className="right-side">
-            <h1>PLACE</h1>
+            <h1 data-aos="fade-up">PLACE</h1>
             <h2 data-aos="fade-left">คณะวิทยาศาสตร์ประยุกต์ (78)</h2>
             <h2 data-aos="fade-left">มหาวิทยาลัยเทคโนโลยี
               <br/>พระจอมเกล้าพระนครเหนือ</h2>
