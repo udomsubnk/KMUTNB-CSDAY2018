@@ -77,14 +77,14 @@ export default class Table extends React.Component {
               <option value={0}>Web Apllication</option>
               <option value={1}>ML & Data analytics</option>
               <option value={2}>System</option>
-              <option value={3}>System</option>
-              <option value={4}>Blockchain</option>
-              <option value={5}>Network & Security</option>
+              <option value={3}>Blockchain</option>
+              <option value={4}>Network & Security</option>
+              <option value={5}>Mobile Application</option>
               <option value={6}>IOT</option>
             </select>
           :
             <div className="type-menu">
-              <h4>Type</h4>
+              <h2>หมวดหมู่</h2>
               <BtnType backgroudColor={selectBtn === -1}  onClick={() => this.onSelectType(-1)} >All</BtnType>
               <BtnType backgroudColor={selectBtn === 0}  onClick={() => this.onSelectType(0)} >Web Apllication</BtnType>
               <BtnType backgroudColor={selectBtn === 1}  onClick={() => this.onSelectType(1)} >ML & Data analytics</BtnType>
@@ -98,6 +98,7 @@ export default class Table extends React.Component {
         </div>
         <div className="main-table">
           <div className="wrap-table">
+            <h2>ชื่อโครงงาน</h2>
             <div id='table' className="project-table">
               { projectsByType.map((project) => (
                   <div key={project.id} className="project-list">
@@ -114,19 +115,21 @@ export default class Table extends React.Component {
 }
 
 const BtnType = styled.div`
-  background: ${props => props.backgroudColor ? 'red': 'rgb(8, 8, 8)'};
+  background: ${props => props.backgroudColor ? '#5AFEED' : 'rgba(0, 0, 0, 0.7);'};
   height: 50px;
-  border: 2px solid #FFF;
-  color:yellow;
+  border: 2px solid #5AFEED;
   cursor: pointer;
   border-radius: 15px;
+  color: ${props => props.backgroudColor ? 'black' : 'white;'};
+  line-height: 50px;
 `
 
 const DropdownType = styled.option`
-  background: ${props => props.backgroudColor ? 'red': 'rgb(8, 8, 8)'};
+  background: ${props => props.backgroudColor ? '#5AFEED' : 'rgba(0, 0, 0, 0.7);'};
   height: 50px;
-  border: 2px solid #FFF;
-  color:yellow;
+  border: 2px solid #5AFEED;
+  color: ${props => props.backgroudColor ? 'black' : 'white;'};
   cursor: pointer;
   border-radius: 15px;
+  line-height: 50px;
 `
