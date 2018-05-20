@@ -28,14 +28,13 @@ class Detail extends Component {
           <div className="Detail-mgtitem">
             <h1 data-aos="fade-up" className="ml-color">REASONS TO COME</h1>
             <p data-aos="fade-up" className="Detail-content">
-              คุณจะได้พบกับ พบกับโครงงานและแรงบรรดาลใจใหม่ๆ เทคโนโลยีล้ำสมัยไม่ว่าจะเป็น
+              ในงานนี้ คุณจะได้พบกับโครงการกว่า 70 โครงการที่พร้อมสร้างไอเดียและแรงบันดาลใจให้กับคุณ ทุกโครงการมีการใช้เทคโนโลยีสุดล้ำไม่ว่าจะเป็น
               <br /><span><span className="Detail-technology">►</span>Blockchain Technology</span>
               <br /><span><span className="Detail-technology">►</span>Machine Learning & Data Analytics</span>
               <br /><span><span className="Detail-technology">►</span>Internet of Things</span>
               <br /><span><span className="Detail-technology">►</span>Web & Mobile Application</span>
               <br /><span><span className="Detail-technology">►</span>Network & Security</span>
               <br /><span>และร่วมโหวตโครงงานที่ท่านชื่นชอบได้ภายในงาน เพื่อเป็นกำลังใจและสนับสนุนให้โครงงานของนักศึกษาเข้าสู่การประกวดรอบต่อไป</span>
-              
             </p>  
           </div>
         </div>
