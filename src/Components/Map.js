@@ -9,7 +9,6 @@ const StyledMapWithAnInfoBox = compose(
     containerElement: <div className="google-map-size" />,
     mapElement: <div style={{ height: `300px`, width: '100%' }}  />,
     center: { lat: 13.821483, lng: 100.515324 },
-    // 13.821483, 100.515324
   }),
   withStateHandlers(() => ({
     isOpen: false,
