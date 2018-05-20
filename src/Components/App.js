@@ -17,7 +17,6 @@ class App extends Component {
   }
   render() {
     return (
-
       <Element name="scroll-landing">
         <StarfieldCanvas/>
         <Navbar/>
