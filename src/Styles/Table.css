@@ -1,6 +1,6 @@
 .Table h1{
   color: #5AFEED;
-  padding-top: 12vh;
+  padding-top: 6vh;
   margin-bottom: 5vh;
 }
 .container-table {
@@ -29,14 +29,17 @@
   padding-left: 20px;
 }
 .type-menu-mobile {
-  width: 100%;
-  animation : type 0.7s ease infinite;
+    width: 100%;
+  -webkit-animation : type 0.7s ease infinite;
+          animation : type 0.7s ease infinite;
   outline: none;
   height: 50px;
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
   text-align-last:center;
+  border: 1px solid #5AFEED; 
+  border-radius: 5px;
 }
 .btn-type {
   height: 50px;
