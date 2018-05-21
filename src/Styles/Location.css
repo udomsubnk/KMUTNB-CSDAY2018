@@ -15,7 +15,6 @@
 	display: inline-block;
 }
 
-
 .content-location-header {
 	font-size: 60px;
 	color: #f59f66;
@@ -62,7 +61,18 @@
         width: 70vw;
     }
     .google-map-size{
-        
         padding-right: 0;
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .google-map-size{
+        padding-right: 0;
+        height: 200px;
+    }
+}
+@media (min-width: 769px) {
+    .google-map-size{
+        height: 300px;
     }
 }
