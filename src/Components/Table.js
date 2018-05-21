@@ -63,8 +63,9 @@ export default class Table extends React.Component {
   }
 
   onSelectType = (type) => {
+    console.log(this.state.projects);
     const { projects } = this.state
-    if(type === -1) {
+    if(type == -1) {
       this.onScrollTop()
       this.setState({ 
         projectsByType: projects,
@@ -72,7 +73,10 @@ export default class Table extends React.Component {
       })
     }else {
       this.onScrollTop()
-      const selected = projects.filter((project) => project.typeId === type)
+      console.log(type);
+      console.log('--------------');
+      const selected = projects.filter((project) => project.typeId == type)
+      console.log(selected);
       this.setState({ 
         projectsByType: selected,
         selectBtn: type
