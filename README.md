@@ -20,3 +20,14 @@ yarn start
 # build to static files
 yarn build
 ```
+
+## Screenshorts
+
+> Landing
+![alt text](https://raw.githubusercontent.com/udomsubnk/KMUTNB-CSDAY2018/master/screenshot/landing.png)
+
+> Deatil
+![alt text](https://raw.githubusercontent.com/udomsubnk/KMUTNB-CSDAY2018/master/screenshot/Detail.png)
+
+> Project Lists
+![alt text](https://raw.githubusercontent.com/udomsubnk/KMUTNB-CSDAY2018/master/screenshot/project-list.png)
